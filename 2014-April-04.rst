@@ -1,0 +1,81 @@
+StuPig Treffen 04.04.2014
+=========================
+
+PythonCamp Nachbesprechung
+--------------------------
+* Etherpad: https://www.barcamptools.eu/_pads/p/pycamp201403
+* Making Usergroups Better: https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-UserGroups
+    * deshalb neue stupig Methoden (siehe stupig Meta Verbesserungs Diskussion)
+* BDD Hands-On mit Python:
+    * Funktioniert nicht für alles.
+    * Python implementierung scheint gut zu sein: http://pythonhosted.org/behave/
+    * **Interesse**: Beispiel: BDD + Behave + Selenium + Unittesting-Ergänzung
+* PyPy, JIT und numba: https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-JIT
+    * PyPy ist solangs zu komplex und alt geworden. Wäre aber immer noch cool.
+    * The GIL (Global interpreter lock) must go!!!
+* Home Automation mit kivy, raspi, Mosquitto (MQTT), Tellstick Python API:  https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-Kivy
+    * Mosquitto (MQTT): Jemand sendet irgendwas überall hin und irgendwer wird schon zuhöhren.
+    * Kivy
+        * Aus Sourcen zu bauen ist crap, Abhängigkeiten sind via pip/PyPi kaputt. Unter Debian besser aus testing installieren.
+        * Jedoch lahm wie sau, weil erstmal der Python Interpreter laden muss etc.
+* LightningTalks: sind immer gut
+    * Wunder geschehen: Die Python Broschüre ist gedruckt
+* Eigenfaces: https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-EIGENFACES
+    * Beeindruckend wie sich jemand Statistik und Mathematische Fähigkeiten aneignet
+* Restore: https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-Restore
+    * Interessant übersicht von Backup Lösungen/Tools
+* PyMove3D https://www.barcamptools.eu/_pads/p/pycamp201403-pymove3d
+    * Mehr Kinder zum Programmieren mit Python bringen
+* Ansible, Container, Vagrant: https://www.barcamptools.eu/_pads/p/pycamp201403-deploymentzeuch
+    * Wieso Ansible machen wenn man Salt machen kann?
+        * Wenn man Salt auf Production machen will, auch in Vagrant Salt verwenden.
+* CLI-Programmierung  https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-CLI-Programmierung
+    * Commandeer sieht interessant aus aber eigentlich will man docopt
+    * Wenn man kein PyPi nutzen kann/will ist argparse echt okay zu verwenden.
+* Sphinx https://www.barcamptools.eu/_pads/p/pycamp201403-Sa-Sphinx
+    * Session: Hey ich schreibe ein Buch über sphinx.
+    * **Interesse**: Wie dokumentiere ich eine REST API mit sphinx bzw. wie dokumentiere ich eine REST API
+* matplotlib:  https://www.barcamptools.eu/_pads/p/pycamp201403-So-matplotlib
+    * Interessant aber die Graphen sehen "alt" und "angestaubt" aus.
+* Web-App-Performance-Tweaks: https://www.barcamptools.eu/_pads/p/pycamp201403-So-Performance
+    * Connection pooling in Django 1.6 anschalten.
+    * Auf Maximale Nutzung die Server Skalierung planen, dann dynamisch Server herunterfahren um Strom zu sparen.
+
+
+stupig Meta Verbesserungs Diskussion
+------------------------------------
+* deshalb jetzt mit Protokoll
+    * wird während dem Treffen in einem Etherpad erzeugt
+        * Tipp: Settings - Font Type: monospace
+        * Don't use Tabs... 4 Spaces like PEP8
+        * No etherpad formattings... use rst format style
+    * gibs dann bei Github anzugucken https://github.com/shackspace/pws-prtcl
+* Vorträge machen ja/nein?
+    * Wie kann man Interesse signalisieren:
+        * Ich könnte ein Vortrag zu XY halten, interessiert sich jemand dafür?
+        * Ich würde gerne einen Vortrag zu XY höhren.
+    * Vortragsfindung ist und bleibt schwierig.
+    * Vortrag ist falsches Wort... besser KurzVortrag aka Lightning-Talk
+* Früher die Ankündigung für das nächste Treffen machen. (ToDo: Andreas)
+    * Gegen Ende des Treffens, das nächste Treffen vorbereiten.
+    * Was für Vorträge/Themen sind geplant.
+
+Python HTTP Server
+------------------
+* Usage:
+    * Ins Share Verzeichniss wechseln:
+    * Start server: python -m SimpleHTTPServer 8080
+* Kann der PythonHTTP Server für Datentransfer von 60GB benutzt werden? ja!
+* IPv6 support? Anscheinend kaputt :(
+* 1GB/s gehen locker durch. =)
+
+Progmofo
+--------
+Mehr Programmieren, nicht 2 Jahre lang Plan.
+* http://programming-motherfucker.com/
+* https://www.youtube.com/watch?v=BKorP55Aqvg
+
+Nächster Termin
+---------------
+Datum: 02.05.2014, weil am 18.4. volles Haus ist wegen Easterhegg
+
