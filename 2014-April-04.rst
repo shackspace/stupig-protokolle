@@ -112,7 +112,7 @@ SaltStack
 ---------
 
 * Guter Einstiegspunkt für States: http://saltstarters.org/
-
+* Vagrantfile um mit Salt + Vagrant einzusteigen: https://github.com/jarus/vagrant-salt-minimal
 
 Nächster Termin
 ---------------
