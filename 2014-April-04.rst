@@ -103,7 +103,8 @@ GitHub :octocat:
 * Diffs von rendered rst Files
 * SSH Push URL redircten
 
-::
+.. code::
+
     remote: This repository moved. Please use the new location:
     remote:   https://github.com/anatidae/entchen.git
 
