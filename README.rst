@@ -1,4 +1,4 @@
-pws-prtcl
-=========
+stupig-protokolle
+=================
 
 Laufende Berichterstattung vom Pythonworkshop im shackspace

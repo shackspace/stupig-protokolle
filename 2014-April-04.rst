@@ -76,7 +76,26 @@ Mehr Programmieren, nicht 2 Jahre lang Plan.
 * http://programming-motherfucker.com/
 * https://www.youtube.com/watch?v=BKorP55Aqvg
 
+Python Syntaxspaß
+-----------------
+
+* with Syntax ist super für file handler etc
+* wrapper machen spaß und sind super
+
+Encoding Schmerzen in Python
+----------------------------
+
+* Rausfinden welches Encoding man ausgeben sollte: https://gist.github.com/mfa/9982904
+* Mac OS X: Seit Lion ist kein LC_CTYPE gesetzt. http://yzisin.wordpress.com/2012/01/09/how-to-fix-locale-issues-in-mac-os-x-lion-terminal/
+
+Supervisord mit Twisted
+-----------------------
+
+* Supervisord ist ein Prozessüberwachungstool in python. "pip install supervisord"
+* Damit ein Prozess von supervisord überwacht werden kann, darf sich der Prozess nicht in den Backgroud forken.
+* Supervisorctl reload stickt aus dem Mund! Wieso restartet man den ganzen supervisord mit allen child prozessen?! :rage:
+* VirtualEnv in supervisor aktivieren? Lösung: /path/to/virtualenv/bin/python als Python Interpreter nutzen. :sunglasses:
+
 Nächster Termin
 ---------------
 Datum: 02.05.2014, weil am 18.4. volles Haus ist wegen Easterhegg
-
