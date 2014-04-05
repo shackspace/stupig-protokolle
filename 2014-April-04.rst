@@ -1,5 +1,5 @@
-StuPig Treffen 04.04.2014
-=========================
+StuPig :snake: :pig: Treffen 04.04.2014
+=======================================
 
 PythonCamp Nachbesprechung
 --------------------------
@@ -49,7 +49,7 @@ stupig Meta Verbesserungs Diskussion
         * Tipp: Settings - Font Type: monospace
         * Don't use Tabs... 4 Spaces like PEP8
         * No etherpad formattings... use rst format style
-    * gibs dann bei Github anzugucken https://github.com/shackspace/pws-prtcl
+    * gibs dann bei Github anzugucken https://github.com/shackspace/stupig-protokolle
 * Vorträge machen ja/nein?
     * Wie kann man Interesse signalisieren:
         * Ich könnte ein Vortrag zu XY halten, interessiert sich jemand dafür?
@@ -95,6 +95,24 @@ Supervisord mit Twisted
 * Damit ein Prozess von supervisord überwacht werden kann, darf sich der Prozess nicht in den Backgroud forken.
 * Supervisorctl reload stickt aus dem Mund! Wieso restartet man den ganzen supervisord mit allen child prozessen?! :rage:
 * VirtualEnv in supervisor aktivieren? Lösung: /path/to/virtualenv/bin/python als Python Interpreter nutzen. :sunglasses:
+
+GitHub :octocat:
+----------------
+
+* Weltherrschaft in Kürze
+* Diffs von rendered rst Files
+* SSH Push URL redircten
+
+.. code::
+
+    remote: This repository moved. Please use the new location:
+    remote:   https://github.com/anatidae/entchen.git
+
+SaltStack
+---------
+
+* Guter Einstiegspunkt für States: http://saltstarters.org/
+* Vagrantfile um mit Salt + Vagrant einzusteigen: https://github.com/jarus/vagrant-salt-minimal
 
 Nächster Termin
 ---------------
