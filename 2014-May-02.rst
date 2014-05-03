@@ -1,0 +1,38 @@
+StuPIG :snake: :pig: Treffen 02.05.2014
+=======================================
+
+EuroPython Vorfreude
+--------------------
+
+https://ep2014.europython.eu/en/event/keynotes/
+https://ep2014.europython.eu/en/event/schedule/
+
+Whoosh
+------
+
+Wird in Moin2 als Search Engine verwendet.
+
+E-Mails parsen in Python
+------------------------
+
+Ist echt pain!
+Package email in stdlib ist nicht das wahre. Suchen emails 4 humans.
+
+
+South
+-----
+
+Umstellen auf south
+
+(1) ./manage.py schemamigration appname --inital
+(2) ./manage.py migrate appname --fake
+(3) auf production kopieren/pushen
+(3b) dann auf production die fake-migrate händisch durchführen
+(4) profit
+
+
+nächstes Mal
+------------
+
+https://plus.google.com/events/crn889tv1rkbld5mgga50vgor0c
+
