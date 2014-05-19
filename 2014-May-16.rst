@@ -1,0 +1,63 @@
+StuPIG Treffen 16.05.2014
+=========================
+
+PyCharm
+-------
+
+Wenn man eine IDE für Python verwenden möchte, dann will man PyCharm verwenden. http://www.jetbrains.com/
+Es gibt eine Community Edition for free!
+
+
+requests
+--------
+
+https://pypi.python.org/pypi/requests
+pip install requests
+
+DAS Package überhaupt für requests. Macht alles viel einfacher und schmerzfreier.
+
+Wenn man dann noch was für die Kommandoline haben möchte, sollte man sich https://github.com/jakubroztocil/httpie anschauen. (Basiert auf Requests)
+
+
+virtualenv-Kurzeinführung (nicht virtualenvwrapper)
+---------------------------------------------------
+
+Thomas erklärt kurz&knackig die Installation von virtualenv und wie man sich ein virtuelles Environment einrichtet.
+
+Konkret wird das o.g. ``requests``-Package installiert und dessen Verwendung aufgezeigt.
+
+Verbrechen an der Python Welt begangen!
+---------------------------------------
+
+Ohne weiteren Kommentar. Warnung: Scherzbehaftet!
+https://github.com/tailhook/pyzza
+
+Off topic
+---------
+
+Rekordbestellung bei Super China: 80,66€ (mit 26% Rabatt)
+
+Lieferservice API
+-----------------
+
+Keine bei größeren Anbietern vorhanden. Für die ultimative SocialPizzaApp muss man die Protokolle reverse engineeren.
+
+
+Welches Einstiegsgehalt ist angemessen für einen angehenden Python Junioer dev
+------------------------------------------------------------------------------
+
+Bei Großunternehmen sind wohl 45 bis 50 K/a drin.
+
+Aber Großunternehmen haben ihre eigenen Eigenheiten. Und: Windows ist nicht wirklich eine attraktive Entwicklungsplattform.
+
+
+Bepasty Fortschritte
+--------------------
+
+https://github.com/bepasty/bepasty-server
+
+Einige Teilnehmer erweitern den bepasty um weitere Features.t
+
+Salt die 2.
+-----------
+
