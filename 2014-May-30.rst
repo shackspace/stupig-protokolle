@@ -55,10 +55,14 @@ Alternative: https://zapier.com/
 Vergleich von ORMs
 ------------------
 
-Rails: SubOrder.joins(:order).where(orders: { uuid: "123123123" })
-Django: SubOrder.objects.filter(order__uuid="123123123")
-SQLAlchemy: SubOrder.filter(order.uuid=="123123123")
-Plain SQL: SELECT "SubOrder".* FROM SubOrder JOIN Order ON Order.orders = "123123123"
+Rails:
+  ``SubOrder.joins(:order).where(orders: { uuid: "123123123" })``
+Django:
+  ``SubOrder.objects.filter(order__uuid="123123123")``
+SQLAlchemy:
+  ``SubOrder.filter(order.uuid=="123123123")``
+Plain SQL:
+  ``SELECT "SubOrder".* FROM SubOrder JOIN Order ON Order.orders = "123123123"``
 
 
 startupvitamins.com
