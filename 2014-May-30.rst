@@ -1,0 +1,83 @@
+Stupig Treffen vom 30. Mai 2014
+===============================
+
+
+Pelican vs Flask-Rst
+--------------------
+
+mfa stellt seinen neuen/alten Blog vor: http://blog.madflex.de/ welches neu mit pelican http://getpelican.com umgesetzt wurde. Das alte Flask-Rst genügte nicht mehr den Ansprüchen. Er nimmt ein all-the-buzzword theme, das auf dem gumbyframework basiert.
+
+Vorteile von Pelican:
+ * kann out of the box viel: google analytics, Kommentare und viele Themes
+ * hat noch mehr Plugins https://github.com/getpelican/pelican-plugins konkret wird ein Blätter-Plugin verwendet, welches leider wieder Theme-Anpassungen erfordert
+ * schickes Feed-Handling: konfigurierbares Erstellen von Feeds
+ * rendermath plugin zum rendern von LaTeX im Brauser
+ * im Prinzip multiuser-fähig, mit Plugins geht da noch mehr
+ * slugs werden automatisch generiert, können aber auch überschrieben werden
+ * ermöglicht unterschiedliche Konfig für lokale Ansicht und publish
+ * kann sog. Assets auch auf die Cloud (z.D. Klaut) verteilen
+ * gute Dokumentation: http://docs.getpelican.com/en/3.3.0/
+
+
+Alternativen:
+    * Sphinx Documentation als Blog und via ReadTheDocs render und hosten lassen
+    * http://staticsitegenerators.net/
+
+
+Truecrypt: wtf
+--------------
+
+Keiner hat Ahnung was da los ist, nicht mal Bruce Schneier: https://www.schneier.com/blog/archives/2014/05/truecrypt_wtf.html
+
+
+Django Admin Honeypot
+---------------------
+https://github.com/dmpayton/django-admin-honeypot
+Ersetzt den normalen /admin/ mit einem Honeypot. Jeder Login Versuch wird geloggt.
+
+
+microreader pfui, stringer hui
+------------------------------
+
+bronsen war der Aufwand zu groß, microreader https://github.com/morganbengtsson/Micro-reader mit Features und Eye-Candy zu versorgen. Auch wenn es in Python implementiert ist. Stringer https://github.com/swanson/stringer hat all the ruby-gems, aber dafür auch die Features und das Eye-Candy.
+Jarus verwendet sehr gerne feedbin.me (leider so eine Rails Anwendung)
+mfa verwendet theoldreader.com (kostet Geld ab zuvielen Feeds)
+
+
+if this then that saugt
+-----------------------
+
+http://ifttt.com/ klingt gut, hat geile Idee ist aber dennoch doof, weil geschlossene API. 
+
+Alternative: https://zapier.com/
+
+
+Vergleich von ORMs
+------------------
+
+Rails: SubOrder.joins(:order).where(orders: { uuid: "123123123" })
+Django: SubOrder.objects.filter(order__uuid="123123123")
+SQLAlchemy: SubOrder.filter(order.uuid=="123123123")
+Plain SQL: SELECT "SubOrder".* FROM SubOrder JOIN Order ON Order.orders = "123123123"
+
+
+startupvitamins.com
+-------------------
+
+Coole Poster mit wahren Sprüchen, aber leider sehr sehr teuer.
+
+
+online rst editor mit preview
+-----------------------------
+
+http://rst.ninjs.org/
+
+
+kirchenreich.org hat wieder tiles
+---------------------------------
+
+* die alten waren von cloudmate -- http://notes.ericjiang.com/posts/741
+* die neuen sind von mapbox -- https://www.mapbox.com/mapbox.js/api/v1.6.3/
+
+
+
