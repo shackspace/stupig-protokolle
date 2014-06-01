@@ -84,4 +84,17 @@ kirchenreich.org hat wieder tiles
 * die neuen sind von mapbox -- https://www.mapbox.com/mapbox.js/api/v1.6.3/
 
 
+hasher-api incomplete
+---------------------
+
+Beim Versuch https://github.com/bepasty/bepasty-server/issues/37 zu fixen, fiel auf, dass die
+hasher-api von Python (und von OpenSSL) keine Moeglichkeit bietet, den State des hashers zu erhalten
+("save") und spaeter wieder herzustellen ("restore").
+Das waer superpraktisch gewesen, um bei nem chunked upload eben den Hash der hochgeladenen Datei
+immer weiter mitzurechnen.
+
+Nebenbei fiel noch auf, dass wenn man _sha256.py im aktuellen Verzeichnis hat und dann
+"from _sha256 import sha256" ausfuehrt, das zu wahnsinniger Geschwindigkeit fuehrt.
+Bloed nur, dass das nicht der (Python-)Code aus dieser Datei ist, sondern der in Python eingebaute
+C-Code ist. :-D
 
