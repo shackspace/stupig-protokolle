@@ -1,0 +1,77 @@
+Stupig Treffen vom 13. Juni 2014
+================================
+
+
+Waffle vs. Gargoyle
+-------------------
+
+A/B-Testing in gut.
+Egal ob waffle oder gargoyle. Beides gut.
+
+Aber die sonderspezial-tags in den Templates sind nicht so toll, weil sie das Standard {% else %} verwenden.
+Vielleicht will man sich was eigenes schreiben, dass standard-if in den Templates verwendet.
+
+
+"Explore Flask"-Buch ist jetzt opensource
+-----------------------------------------
+
+http://exploreflask.com/
+
+
+Guter Artikel zu Django-Zeug hinter Lanyrd und Eventbrite
+---------------------------------------------------------
+
+http://www.infoworld.com/d/application-development/expert-interview-how-scale-django-244101
+
+Mit Insights zu "Skalierung": sie halten lastgetestete Ressourcen vor, die bei Bedarf aktiviert werden. Lasttests werden in einer Staging-Umgebung gefahren um zu ermitteln, wieviele Resourcen benötigt werden.
+Eventbrite macht beeindruckend seltsames Connectionpooling, damit nicht von einem read-slave die falschen Daten gelesen werden, sondern von dem Master, in den auch gerade geschrieben wurde.
+
+
+Click ist das nächste wichtige Ding
+-----------------------------------
+
+Click is a Python package for creating beautiful command line interfaces
+  in a composable way with as little code as necessary.  It's the "Command
+  Line Interface Creation Kit".  It's highly configurable but comes with
+  sensible defaults out of the box.
+
+https://github.com/mitsuhiko/click
+
+
+FBV vs CBV
+----------
+
+Old Story: es gibt für Beide jeweils geeignete Anwendungsfälle. Im Übrigen lese man "Two Scoops of Django": http://www.amazon.de/dp/098146730X/?tag=nrrdde-21
+für FBV: http://lukeplant.me.uk/blog/posts/djangos-cbvs-were-a-mistake/
+
+Siehe auch: http://soyeahdjango.com/post/60775803305/me-when-adrian-said-cbvs-werent-worth-the-cognitive
+
+
+kurz erwähnt: Morepath
+----------------------
+
+http://morepath.readthedocs.org/en/latest/
+
+Ein Microframework mit interessanten Ansätzen.
+
+
+guter kostenloser Angular.JS-Kurs
+---------------------------------
+
+http://campus.codeschool.com/courses/shaping-up-with-angular-js
+
+
+Generatoren
+-----------
+
+https://wiki.python.org/moin/Generators
+
+es geht mit yield, aber auch mit __iter__(): return self und next()
+
+
+bepasty
+-------
+
+* neues login-feature ist echt cool. Token steht allerdings noch im Klartext in der Config.
+
+
