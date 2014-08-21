@@ -1,0 +1,11 @@
+Stupig Treffen vom 22. August 2014
+================================
+
+
+Agenda
+------
+
+* zipa -- https://github.com/vtemian/zipa
+
+  - demo von zipa in entchen
+  - verbessern von zipa für Domains mit "-" in der url
