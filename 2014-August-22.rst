@@ -1,11 +1,49 @@
 Stupig Treffen vom 22. August 2014
-================================
+==================================
 
 
-Agenda
-------
+Zipa
+----
 
-* zipa -- https://github.com/vtemian/zipa
+* url: https://github.com/vtemian/zipa
 
-  - demo von zipa in entchen
-  - verbessern von zipa für Domains mit "-" in der url
+* code für usage in entchen: https://github.com/anatidae/entchen/blob/master/plugins/issues.py
+  - demo von zipa in entchen: "api object" zu einem URL-Endpoint, wie man Pfade angibt und wie man Query-Parameter anhängt. Außerdem: wie man ein neues !command einem bestehenden Plugin hinzufügt.
+  
+* verbessern von zipa für Domains mit "-" in der url
+  Workaround:
+    import zipa
+    mz_api = getattr(zipa, "api-mit-minus-zeichen.de")
+
+
+And speaking of API:
+
+OAuth1/2
+--------
+
+Entchen [https://github.com/anatidae/entchen] soll u.A. bei Github issues erzeugen können. Die Issues sollen aber so aussehen, als kämen sie vom User, der das !command ausgelöst hat.
+
+Hierzu gibt es Application Tokens.
+
+Wir ausprobieren `requests_oauthlib` https://pypi.python.org/pypi/requests-oauthlib, leider ist die Dokumentation für OAuth2 nicht fertig.
+
+
+LevelDB
+-------
+https://code.google.com/p/leveldb/
+
+Interessante alternative zu shelve. Wäre eine interessante Idee als Storage Backend für kleinere Projekte wie z.B. entchen.
+
+
+Hardware
+--------
+
+"Prellen" von Schaltern erklärt.
+
+
+Moar Entchen
+------------
+
+Entchen hat nun einen webworker https://github.com/anatidae/entchen/blob/master/plugins/helloweb.py
+Der Webworker kann mit einem fiesen hack auch Nachrichten an den IRCBot schicken.
+Next-step: oauth2 für github? http://requests-oauthlib.readthedocs.org/en/latest/examples/github.html
