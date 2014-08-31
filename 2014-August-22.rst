@@ -12,8 +12,11 @@ Zipa
   
 * verbessern von zipa für Domains mit "-" in der url
   Workaround:
+  
+  ::
+
     import zipa
-    mz_api = getattr(zipa, "api-mit-minus-zeichen.de")
+    my_api = getattr(zipa, "api-mit-minus-zeichen.de")
 
 
 And speaking of API:
