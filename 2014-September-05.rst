@@ -74,8 +74,8 @@ https://speakerdeck.com/eay/personal-api-zur-abbildung-des-digitalen-ichs-im-soc
 in Python ... Name des projektes ist gefunden. aktuell privates Repo. public folgt, wenn etwas aufgeräumter.
 
 
-OSM full vs. daily import
--------------------------
+OSM full vs. daily import -- osm-api-cache
+------------------------------------------
 
 Wir (kirchenreich und happyhourmap) brauchen einen Node/Way/Rel-Cache, um die daily changeset von OpenStreetmap zu verarbeiten.
 Die Daily-Files gehen davon aus, dass man eine fullimport-Datenbank hat.
@@ -84,9 +84,9 @@ wir haben aber nur Teilausschnitte (Kirchen, bzw. Bars).
 Caches:
 ~~~~~~~
 
- - Node Cache (zum Bauen von Ways, Rels)
- - Way Cache (zum Bauen von Rels)
- - Relation Cache (zum Bauen von Rels)
+- Node Cache (zum Bauen von Ways, Rels)
+- Way Cache (zum Bauen von Rels)
+- Relation Cache (zum Bauen von Rels)
 
 Das ganze sollte nicht zuviel RAM verbrauchen, deshalb kein Redis.
 Postgres bietet sich wegen der schnellen Indexe auf die osm-ids an (Hauptzugriffspfad auf die Daten).
@@ -139,8 +139,8 @@ Was soll es können:
 Notfall Strategien für fehlende Daten:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- * http://wiki.openstreetmap.org/wiki/API_v0.6#Read:_GET_.2Fapi.2F0.6.2F.5Bnode.7Cway.7Crelation.5D.2F.23id
- * planet osm dump
- * local (deskop pc) gehostete postgres mit fullimport (ca. 600G postgres-db)
+* http://wiki.openstreetmap.org/wiki/API_v0.6#Read:_GET_.2Fapi.2F0.6.2F.5Bnode.7Cway.7Crelation.5D.2F.23id
+* planet osm dump
+* local (deskop pc) gehostete postgres mit fullimport (ca. 600G postgres-db)
 
-
+repo: https://github.com/kirchenreich/osm-api-cache
