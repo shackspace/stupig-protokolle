@@ -37,6 +37,7 @@ Click is a Python package for creating beautiful command line interfaces
 
 https://github.com/mitsuhiko/click
 
+Und BTW: in flask (repo-version) wird es bereits verwendet, damit ist dann wohl flask-script bald ueberfluessig.
 
 FBV vs CBV
 ----------
@@ -73,5 +74,6 @@ bepasty
 -------
 
 * neues login-feature ist echt cool. Token steht allerdings noch im Klartext in der Config.
-
-
+* purge cli-kommando zum loeschen alter/grosser files aus dem storage
+* mehr docs: changelog, docstring zu TOKENS und zu den neuen cli-Kommandos.
+* noch mit argparse (== wie seither), "click" dann erst spaeter, wenn es in flask required wird.
