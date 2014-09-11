@@ -11,8 +11,9 @@ Agenda
   * Performance / Memory Usage (lxml hat seine Tücken)
 
 * Andreas Datensammel/Graphen API/Anwendung Erweiterung
-
- * Spotify API
-  * Korrelierung von was hab ich gehört (Playlists) und wie wirkte sich das auf die Commits aus
+  
+  * Spotify API
+  
+    * Korrelierung von was hab ich gehört (Playlists) und wie wirkte sich das auf die Commits aus
 
 * FIXME / ADD MORE
