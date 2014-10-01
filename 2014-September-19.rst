@@ -32,3 +32,16 @@ osm-api-cache
 
 proxy für osm daten (teile aus dem fullplanet)
 wurde weiterentwickelt: https://github.com/kirchenreich/osm-api-cache
+
+* ``osm-cache`` (mfandreas / jarus)
+
+  * Wieso?
+  * Tech-Porn: zeromq, gevent, multiprocessing, SQLAlchemy und was man noch machen könnte und sinnvoll ist.
+  * Performance / Memory Usage (lxml hat seine Tücken)
+
+* Andreas Datensammel/Graphen API/Anwendung Erweiterung
+  
+  * Spotify API
+  
+    * Korrelierung von was hab ich gehört (Playlists) und wie wirkte sich das auf die Commits aus
+
