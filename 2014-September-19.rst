@@ -1,10 +1,34 @@
 Stupig Treffen vom 19. September 2014
 =====================================
 
-Agenda
-------
+Einsteiger-Dinge
+----------------
 
-* osm-api-cache: @mfa und @Jarus stellen vor, was sie da machen und warum
-* DjangoDash / WSGIWrestle ist Ende November. Wer macht mit? Projektideen?
-* Am DjangoDash-WE ist auch die PyUnConf in Hamburg
-* <add more>
+Einsteiger-Kurz für Python auf Coursera https://class.coursera.org/interactivepython-005
+
+
+Django-Dash
+-----------
+
+Werbung gemacht!
+War cool letztes Jahr (auch vorletztes Jahr).
+
+@tw hat einen Vorschlag gemacht. (ist in einem extra Pad)
+
+zweite Idee einen kollaborativen Editor (unter verwendung von https://togetherjs.com/ )
+
+weitere Ideen sind willkommen
+
+
+PyUnConf in Hamburg
+-------------------
+
+am selben WE wie der djangodash.
+http://www.pyunconf.de/
+
+
+osm-api-cache
+-------------
+
+proxy für osm daten (teile aus dem fullplanet)
+wurde weiterentwickelt: https://github.com/kirchenreich/osm-api-cache
