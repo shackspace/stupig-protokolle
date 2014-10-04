@@ -15,4 +15,4 @@ Agenda
 
   - Wer ist dabei? Bei welchem Projekt?
 
-* misc
+* FIXME (weitere Punkte hinzufügen, oder bestehende Agenda-Punkte verbessern)
