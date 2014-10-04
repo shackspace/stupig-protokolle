@@ -1,5 +1,5 @@
 Stupig Treffen vom 03. Oktober 2014
-=====================================
+===================================
 
 Agenda
 ------
@@ -37,7 +37,7 @@ User Story
 @Jarus möchte Pizza bestellen und will seine Kollegen fragen ob die auch etwas möchten.
 
 Ablauf:
-=======
++++++++
 
 Vorgang: Öffnen einer Bestell-Session
 *************************************
@@ -127,13 +127,14 @@ weiteres
 --------
 
 dxheat.com
-**********
+++++++++++
+
 
 * Gebaut in Django
 * Stack: https://www.dropbox.com/s/iamy56t9jc82ask/Architecture%20DXHeat.com%20v%201.1.pdf?dl=0
 
 
 logging
-*******
++++++++
 
 logmessage nach logstash schicken
