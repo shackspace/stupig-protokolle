@@ -17,6 +17,7 @@ Agenda
 
   - Wer ist dabei? Bei welchem Projekt?
 
+<<<<<<< HEAD
 
 ***************************************
 
@@ -137,3 +138,5 @@ Emberjs hat ein wesentlich süßeres Logo als Angularjs.
 -> mpathy schuldet TW 10 Euro <-
 
 Mehr Strom!
+
+* FIXME (weitere Punkte hinzufügen, oder bestehende Agenda-Punkte verbessern)
