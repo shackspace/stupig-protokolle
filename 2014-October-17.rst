@@ -17,7 +17,6 @@ Agenda
 
   - Wer ist dabei? Bei welchem Projekt?
 
-<<<<<<< HEAD
 
 ***************************************
 
