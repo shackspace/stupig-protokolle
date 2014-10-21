@@ -1,9 +1,6 @@
 Stupig Treffen vom 17. Oktober 2014
 =====================================
 
-Stupig Treffen vom 17. Oktober 2014
-=====================================
-
 Agenda
 ------
 
@@ -26,7 +23,7 @@ Empfehlungen:
 
 
 djangodash-ideen:
-------------------
+-----------------
 
 Hier brauchts noch Ideen! Und Mitmachende: am besten bei TW melden :)
 
@@ -34,7 +31,8 @@ Hier brauchts noch Ideen! Und Mitmachende: am besten bei TW melden :)
 
 
 Stupig-Projekt: Letusorderit
-------------------------------
+----------------------------
+
 - Kurzes Recap zum gedachten Projekt-Ablauf:
   - Mob-Programming
   - Szenario: https://github.com/shackspace/stupig-protokolle/blob/master/2014-October-03.rst#letusorderit
@@ -49,7 +47,7 @@ Buchempfehlung für Einsteiger: Head First Python: http://www.amazon.de/dp/14493
 
 
 Einführung in Django mit Virtualenv
--------------------------------------
+-----------------------------------
 
 Virtualenv
 ~~~~~~~~~~
@@ -100,6 +98,7 @@ virtualenv löschen
 
 Django
 ~~~~~~
+
 http://www.djangoproject.com/
 https://docs.djangoproject.com/en/1.7/intro/tutorial01/
 Buchempfehlung: http://www.amazon.de/dp/098146730X/?tag=nrrdde-21
@@ -132,6 +131,7 @@ eine neue App anlegen mit dem namen 'ola'
 
 Sonstiges
 ---------
+
 Emberjs hat ein wesentlich süßeres Logo als Angularjs.
 
 -> mpathy schuldet TW 10 Euro <-
