@@ -20,3 +20,5 @@ Agenda
 
   - DjangoDash/WsgiWrestle ist am 29. + 30.11
   - Wer ist dabei? Bei welchem Projekt?
+  - http://etherpad.osuosl.org/python-shack-hack < seitherige Ideen - hat noch jemand bessere?
+  
