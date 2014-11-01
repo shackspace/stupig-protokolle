@@ -23,11 +23,11 @@ Einsteigerprojekt LetUsOrder.It startet
 ---------------------------------------
 
 * Erklärung der Herangehensweise:
-  
+
   * im Haupt-github-repo wird nur gearbeitet während des Workshops
     https://github.com/letusorderit/letusorderit
   * Jeder darf und soll Forken und mit seinem Fork herumspielen/experimentieren
-  * Gerne werden bei jedem Workshop auch Fragen zu vorigen Themen beantwortet 
+  * Gerne werden bei jedem Workshop auch Fragen zu vorigen Themen beantwortet
 
 
 * Django für letusorder.it einrichten
@@ -53,7 +53,7 @@ Projekt anfangen:
   # define superuser for administration
   # browse to http://127.0.0.1:8000/admin/ and log in
 
-  # create an app for the order management, 
+  # create an app for the order management,
   # contains database layout for orders
   ./manage.py startapp ordermgmt
 
@@ -88,7 +88,7 @@ Die beiden neuen Models in ordermgmt/admin.py registriert.
 ----------------------------------------------------------------------
 
 
-# source virtualenvwrapper, best included in  ~/.bashrc 
+# source virtualenvwrapper, best included in  ~/.bashrc
 if [ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ] ; then
     . /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 fi
@@ -110,7 +110,7 @@ fi
 # leave virtualenv
 # deactivate
 
-# install Django in our virtualenv 
+# install Django in our virtualenv
 pip install Django
 # additional Management-commands (shell_plus)
 pip install django-extensions
@@ -149,8 +149,6 @@ $ ./manage.py createsuperuser
 # define superuser for administration
 # browse to http://127.0.0.1:8000/admin/ and log in
 
-# create an app for the order management, 
+# create an app for the order management,
 # contains database layout for orders
 ./manage.py startapp ordermgmt
-
-
