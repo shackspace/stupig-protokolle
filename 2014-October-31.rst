@@ -32,10 +32,44 @@ Einsteigerprojekt LetUsOrder.It startet
 
   * Django für letusorder.it einrichten
 
+Installation unter Ubuntu 14.04:
+
+``sudo apt-get install python3 python3-pip python-virtualenv virtualenvwrapper``
+
+VirtualEnv anlegen:
+
+``mkvirtualenv letusorderit -p /usr/bin/python3``
+
+Projekt anfangen:
+
+::
+
+  (im aktivierten Virtualenv)
+  $ django-admin startproject letusorderit
+  $ cd letusorderit
+  $ ./manage.py migrate
+  $ ./manage.py runserver &
+  $ ./manage.py createsuperuser
+  # define superuser for administration
+  # browse to http://127.0.0.1:8000/admin/ and log in
+
+  # create an app for the order management, 
+  # contains database layout for orders
+  ./manage.py startapp ordermgmt
 
 
   * Modelle erklären und anlegen
+
+Models *Order* und *OrderItem* in ordermgmt/models.py angelegt.
+
+Migrationen erstellt mit: ``./manage.py makemigrations``
+
+Migriert mit: ``./manage.py migrate``
+
   * Admin konfigurieren und zeigen
+
+Die beiden neuen Models in ordermgmt/admin.py registriert.
+
 
   * preview:
 
@@ -52,14 +86,6 @@ Einsteigerprojekt LetUsOrder.It startet
 
 
 ----------------------------------------------------------------------
-
-(FIXME ab hier)
-
-# Installation unter Ubuntu 14.04
-
-sudo apt-get install python3 python3-pip python-virtualenv virtualenvwrapper
-
-
 
 
 # source virtualenvwrapper, best included in  ~/.bashrc 
