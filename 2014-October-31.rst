@@ -22,15 +22,15 @@ Begriffserklärung:
 Einsteigerprojekt LetUsOrder.It startet
 ---------------------------------------
 
-  * Erklärung der Herangehensweise:
+* Erklärung der Herangehensweise:
   
-    * im Haupt-github-repo wird nur gearbeitet während des Workshops
-      https://github.com/letusorderit/letusorderit
-    * Jeder darf und soll Forken und mit seinem Fork herumspielen/experimentieren
-    * Gerne werden bei jedem Workshop auch Fragen zu vorigen Themen beantwortet 
+  * im Haupt-github-repo wird nur gearbeitet während des Workshops
+    https://github.com/letusorderit/letusorderit
+  * Jeder darf und soll Forken und mit seinem Fork herumspielen/experimentieren
+  * Gerne werden bei jedem Workshop auch Fragen zu vorigen Themen beantwortet 
 
 
-  * Django für letusorder.it einrichten
+* Django für letusorder.it einrichten
 
 Installation unter Ubuntu 14.04:
 
@@ -58,7 +58,7 @@ Projekt anfangen:
   ./manage.py startapp ordermgmt
 
 
-  * Modelle erklären und anlegen
+* Modelle erklären und anlegen
 
 Models *Order* und *OrderItem* in ordermgmt/models.py angelegt.
 
@@ -66,16 +66,16 @@ Migrationen erstellt mit: ``./manage.py makemigrations``
 
 Migriert mit: ``./manage.py migrate``
 
-  * Admin konfigurieren und zeigen
+* Admin konfigurieren und zeigen
 
 Die beiden neuen Models in ordermgmt/admin.py registriert.
 
 
-  * preview:
+* preview:
 
-    * django-rest-framework
-    * api design: Versionierung der API, Pagination nicht erst nachreichen
-    * Viewsets / Serializers
+  * django-rest-framework
+  * api design: Versionierung der API, Pagination nicht erst nachreichen
+  * Viewsets / Serializers
 
 * DjangoDash/WsgiWrestle-Planungen
 
