@@ -11,7 +11,7 @@ Agenda
 * bauen von Tests mit py.test, die genau die Anwendungslogik abtesten
 * Ausblick zu möglichen Erweiterungen:
 
-  - Python-Client (für IRC, Twitter, Jabber, ...) mit zipa oder requests
+  - Python-Client (für IRC, Twitter, Jabber, ...) mit zipa oder requests /
     Gute Beispiele: tweepy, python-fitbit, python-intercom, ...
   - EmberJS/AngularJS Frontend
 
