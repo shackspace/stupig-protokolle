@@ -1,0 +1,14 @@
+Stupig Treffen vom 09. Januar 2015
+==================================
+
+Agenda
+------
+
+* pull-requests
+* Lizenz für letusorderit / letusorderit-client festlegen
+* letusorderit-client entwickeln
+
+  https://github.com/letusorderit/letusorderit-client
+
+  - Python-Client (für IRC, Twitter, Jabber, cli,. ...) mit requests /
+    Gute Beispiele: tweepy, python-fitbit, python-intercom, ...
