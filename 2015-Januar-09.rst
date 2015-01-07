@@ -4,6 +4,7 @@ Stupig Treffen vom 09. Januar 2015
 Agenda
 ------
 
+* am 23.1. ist clunc.eu ... computerlinguistik barcamp ...
 * pull-requests
 * Lizenz für letusorderit / letusorderit-client festlegen
 * letusorderit-client entwickeln
