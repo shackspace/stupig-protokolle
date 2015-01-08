@@ -5,7 +5,10 @@ Agenda
 ------
 
 * am 23.1. ist clunc.eu ... computerlinguistik barcamp ...
-* pull-requests
+* pull-requests (docker, throttle, ...)
+* letusorder.it/api/v1 -> api.letusorder.it/v1
+* letusorder.it/ mit github-pages?
+* https mit cacert
 * Lizenz für letusorderit / letusorderit-client festlegen
 * letusorderit-client entwickeln
 
