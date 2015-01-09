@@ -1,14 +1,112 @@
 Stupig Treffen vom 09. Januar 2015
 ==================================
 
-Agenda
-------
+qtile
+-----
 
-* pull-requests
-* Lizenz für letusorderit / letusorderit-client festlegen
-* letusorderit-client entwickeln
+Tiling Fenstermanager in Python
+https://github.com/qtile/qtile
 
-  https://github.com/letusorderit/letusorderit-client
 
-  - Python-Client (für IRC, Twitter, Jabber, cli,. ...) mit requests /
-    Gute Beispiele: tweepy, python-fitbit, python-intercom, ...
+Pizza-Bestellung
+----------------
+
+"Trockener" Ablauf, anhand konkreter Abläufe 
+
+- new order (Domingo, master: @tw)
+- new orderitem: @Jarus, Schinken/Pilze/Paprika groß (10,50€) OK
+- new orderitem: @frank, Pappardelle al Salmone (10,20€) OK
+- new orderitem: @mike, Pizza Käse + Paprika,Peperoni,... (11,50€)
+- new orderitem: @dennis, Pizza Salami, Schinken und Champignons mit Oliven, Zwiebeln und Peperoni (10,50€)
+
+- alles rabatt 27%
+- mglw. versandkosten auf alle anteilig umlegen
+
+
+Barcamp clunc.eu
+----------------
+
+Am 23.1. ist http://clunc.eu 
+
+bronsen und mfa werden dort sein und laden die StuPIG-Teilnehmer ein. Es ist zwar ein Computerlinguistik-Barcamp, kann aber auch für Andere interessant sein.
+Und am Freitag Abend ist einfach nur nettes beisammen sein und so.
+
+
+PR mergen
+---------
+
+PRs wurden gemergt (Dockerisierung, throttling), neue erstellt und wieder gemergt: alles für letusorder.it anbei auf github.
+
+
+Subdomain konfigurieren
+-----------------------
+
+Der API-Endpunkt soll unter http://api.letusorder.it/v1/ verfügbar sein, damit man http://letusorder.it/ aus github pages bedient werden kann.
+
+(Den nginx richtig zu halten scheint nicht sehr einfach...)
+
+
+
+Moar Security
+-------------
+
+So macht man sich selber ein wildcard-Zertifikat: http://blog.qax.io/cacert-and-wildcards/
+
+Crashkurs cacert: Punkte, Assurer, wie & warum.
+
+https://api.letusorder.it/ ist nun https-only! *Gewinn!*
+
+
+
+Lizenz für letusorderit / letusorderit-client festlegen
+-------------------------------------------------------
+
+Die Lizenz wurde auf GPLv3 festgelegt für beide Repos:
+ - https://github.com/letusorderit/letusorderit https://github.com/letusorderit/letusorderit/blob/master/LICENSE.txt
+ - https://github.com/letusorderit/letusorderit-client https://github.com/letusorderit/letusorderit-client/blob/master/LICENSE.txt
+
+http://www.addalicense.com/ Lizenz auswählen und eigenen Repos hinzufügen.
+
+
+
+letusorderit-client entwickeln
+------------------------------
+
+https://github.com/letusorderit/letusorderit-client
+
+- Python-Client (für IRC, Twitter, Jabber, cli,. ...) mit requests
+  Gute Beispiele: tweepy, python-fitbit, python-intercom, ...
+
+Verbesserungsideen:
+- sprechenderer Name für 'count'
+- Was machen wir bei 'amount' mit der Währung Bitcoin? (Wie ist die kleinste Einheit bei Bitcoins)
+- slugs sollten automatisch als uuid generiert werden
+
+example.py wurde geschrieben um eine order und ein orderitem anzulegen. 
+
+
+EAV mit Django
+--------------
+
+- Entity-Attribute-Value
+- Unterhaltung über EAV und Abstraktion und so
+
+
+pyHDB
+-----
+
+learnings und interessante Einblicke in pyHDB: https://github.com/SAP/PyHDB
+
+
+
+Let us Murder it
+----------------
+
+https://de.wikipedia.org/wiki/The_Horribly_Slow_Murderer_with_the_Extremely_Inefficient_Weapon
+
+
+next
+----
+
+nächstes mal dann auf der Abendveranstaltung der clunc 15!!
+http://clunc.eu
