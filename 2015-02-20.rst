@@ -1,10 +1,45 @@
 Stupig Treffen vom 20. Februar 2015
 ===================================
 
-Agenda
+pullrequests
+------------
+
+gabs keine
+
+
+letusorder.it-website
+---------------------
+
+ist unter: http://letusorder.it/
+code: https://github.com/letusorderit/letusorderit.github.io
+
+hilfe ist erwünscht dies zu verbessern.
+pullrequests werden gerne angenommen.
+
+
+letusorder.it-client
+--------------------
+
+nur einer der eigentlichen workshop-haltenden-crew da.
+
+
+
+securedrop
+----------
+
+https://freedom.press/securedrop
+ist in flask.
+
+
+pySide
 ------
 
-* pullrequests
-* letusorder.it-website
-* letusorder.it-client
-* misc
+ne gui machen will man mit: http://qt-project.org/wiki/PySide
+aber kann das auch qt5?
+
+
+misc
+----
+
+lots of misc.
+nur hat niemand mitgeschrieben :)
