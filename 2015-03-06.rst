@@ -1,0 +1,11 @@
+Stupig Treffen vom 06. März 2015
+===================================
+
+Agenda
+------
+
+* Was habt ihr in den letzte 2 Wochen mit Python gemacht?
+* jmd Erfahrungen mit mail to datenbank (am besten ohne einen Mailserver zu betreiben)?
+* pull-requests für letusorderit?
+* letusorder.it-webseite
+* letusorder.it-client
