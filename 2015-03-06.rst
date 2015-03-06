@@ -10,3 +10,4 @@ Agenda
 * pull-requests für letusorderit?
 * letusorder.it-webseite
 * letusorder.it-client
+* @asmaps könnte bei Interesse zu Docker & SaltStack + Python/Django Dinge zeigen/erklären
