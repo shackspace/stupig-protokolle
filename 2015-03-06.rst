@@ -12,3 +12,4 @@ Agenda
 * letusorder.it-client
 * @asmaps könnte bei Interesse zu Docker & SaltStack + Python/Django Dinge zeigen/erklären
 * @asmaps Hätte Interesse an Monitoring Erfahrungen ohne nagios und/oder icinga (aka php)
+* @notanormalnerd will uns zeigen wir er SOAP macht
