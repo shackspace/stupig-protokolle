@@ -1,12 +1,70 @@
 Stupig Treffen vom 06. März 2015
-===================================
+================================
 
-Agenda
+
+Backup machen
+-------------
+
+@tw meint wir sollen das hier machen:
+https://attic-backup.org/
+kann jetzt auch chunking. und im cloud-umfeld willst du nur das mit den blöcken.
+kann auch acls und xattrs.
+
+Theuni21 schlägt sein Tool https://bitbucket.org/flyingcircus/backy vor - das is voll cool sagt er weil es kann simulieren was passieren wird.
+
+
+DjangoCon-Talk-Proposal
+-----------------------
+
+@mfa will talk zu einem firmen-projekt halten mit entity-attribute-value.
+
+
+Mail to database
+----------------
+
+https://documentation.mailgun.com/quickstart-receiving.html#how-to-start-receiving-inbound-email
+
+Alternative ist aus einem postfach mit imap wieder rausholen.
+
+
+Docker
 ------
 
-* Was habt ihr in den letzte 2 Wochen mit Python gemacht?
-* @mfa würde euch gerne sein DjangoCon-Talk-Proposal vorstellen.
-* @mfa fragt nach Erfahrungen mit mail to datenbank (am besten ohne einen Mailserver zu betreiben)?
-* pull-requests für letusorderit?
+Vorteile/Nachteile. Diskussionen über dieses Docker.
+
+
+NixOS
+-----
+
+Live-demo von theuni von NixOS.
+
+
+Buch: Mastering Python Design Patterns
+--------------------------------------
+
+https://www.packtpub.com/application-development/mastering-python-design-patterns
+
+Nett, weil der (jeweils komplette) Beispielcode in Python ist. Nicht so dick: manche Patterns sind schon im Python-Kern implementiert (z.B. map, itertools).
+
+
+Nagios / Icinga
+---------------
+
+gibt es da was cooleres? nicht in php?
+
+ja, in golang:
+https://www.consul.io/
+https://github.com/progrium/docker-consul
+
+Weitere Alternativen:
+http://www.zabbix.com/
+http://sensuapp.org/
+http://riemann.io/
+
+
+next
+----
+
+* @notanormalnerd will uns zeigen wir er SOAP macht
 * letusorder.it-webseite
 * letusorder.it-client
