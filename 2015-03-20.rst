@@ -1,0 +1,10 @@
+Stupig Treffen vom 20. März 2015
+================================
+
+Agenda
+------
+
+* @notanormalnerd will uns zeigen wir er SOAP macht
+* pull-requests für letusorderit
+* letusorder.it-webseite
+* letusorder.it-client
