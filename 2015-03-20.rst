@@ -4,7 +4,61 @@ Stupig Treffen vom 20. März 2015
 Agenda
 ------
 
+* was habt ihr in den letzten (zwei) Wochen mit Python gemacht?
 * @notanormalnerd will uns zeigen wir er SOAP macht
 * pull-requests für letusorderit
 * letusorder.it-webseite
 * letusorder.it-client
+
+
+Was habt ihr in den letzen 2 Wochen mit Python gemacht
+------------------------------------------------------
+
+
+bronsen: Refactoring einer Datenimportkomponente
+
+mfa: Komisches & nicht so Relevantes @work; Feinstaublogger für OKLab ( http://codefor.de/ ) mit Freifunk-Zwang (gut!) Vorschlag von per http://airqualityegg.com/
+
+jarus:
+Wurde jetzt erst veröffentlicht als Alpha: https://github.com/SAP/sqlalchemy-hana look at it, is has surprisingly little code; sqlalchemy pwnz0red!
+Krasse CPUs: http://ark.intel.com/de/products/75257/Intel-Xeon-Processor-E7-8880-v2-37_5M-Cache-2_50-GHz
+
+nethop: nüscht; hat neulich aber was für Django dings Translation Services gemacht mit automatisch und so
+
+dennis: SOAP von MS SharePoint via Python genutzt um Dateien hochzuladen. 
+
+tw: hat attic mit Pull Requests überschwemmt: such fast, many code, very pythonic (https://github.com/jborg/attic/pulls/ThomasWaldmann)
+    Domain attic.sh is available for purchase
+
+per: ist in python eingetaucht, bekommt aber von Allen Python3 empfohlen: z.B. http://www.diveinto.org/python3/ oder auch Test-Driven Development with Python: http://shop.oreilly.com/product/0636920029533.do
+
+asmaps: docker, salt, aws, automation stuff - mit Python verklebt.
+
+
+So kann man SOAP benutzen
+-------------------------
+
+Beispielcode um Wettervorhersagen abzufragen (python2): https://gist.github.com/NotANormalNerd/c239e6aa0cffd0e159b7
+
+Geilere Wetter-APIs, aber alle diese können kein SOAP: openweathermap.org, forecast.io
+
+
+
+Letusorder.it
+-------------
+
+Pull Requests
+~~~~~~~~~~~~~
+
+keine
+
+
+Website
+~~~~~~~
+
+es wurde eine Webseite erstellt.
+Siehe http://letusorder.it/
+Code unter: https://github.com/letusorderit/letusorderit.github.io
+
+Tickets ab jetzt unter https://github.com/letusorderit/meta
+
