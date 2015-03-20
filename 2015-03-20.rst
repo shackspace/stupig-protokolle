@@ -1,19 +1,9 @@
 Stupig Treffen vom 20. März 2015
 ================================
 
-Agenda
-------
-
-* was habt ihr in den letzten (zwei) Wochen mit Python gemacht?
-* @notanormalnerd will uns zeigen wir er SOAP macht
-* pull-requests für letusorderit
-* letusorder.it-webseite
-* letusorder.it-client
-
 
 Was habt ihr in den letzen 2 Wochen mit Python gemacht
 ------------------------------------------------------
-
 
 bronsen: Refactoring einer Datenimportkomponente
 
@@ -41,7 +31,6 @@ So kann man SOAP benutzen
 Beispielcode um Wettervorhersagen abzufragen (python2): https://gist.github.com/NotANormalNerd/c239e6aa0cffd0e159b7
 
 Geilere Wetter-APIs, aber alle diese können kein SOAP: openweathermap.org, forecast.io
-
 
 
 Letusorder.it
