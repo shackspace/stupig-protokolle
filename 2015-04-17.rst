@@ -1,0 +1,18 @@
+Stupig Treffen vom 17. April 2015
+================================
+
+Agenda
+------
+
+* Was habt ihr in den letzten 4 Wochen mit Python gemacht
+* Bericht vom Python-Camp von @mfa
+* Bericht von der EasterHegg von @tw und @bronsen
+* Feinstaub-Sensor-API Projekt von @mfa (-> https://github.com/opendata-stuttgart )
+  - Django-Rest-Framework: https://api.dusti.xyz
+  - Partikelsensor via Leonardo am Raspberry-PI. Letzterer protokolliert und pusht in Python
+  - Ziel: ESP8266 soll protokollieren und senden
+  - Ziel (future): ein STM32? wenn der ESP8266 nicht mehr reicht
+  - die DRF-API braucht ein Nutzerfrontend? aktuell alles über /admin
+  - auch der Raspberry code ist erstmal auf funktioniert gebaut
+* @mfa kann einen Python-API-Client zeigen, der auf Arbeit entstanden ist
+* letusorder.it braucht auch so was
