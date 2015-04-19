@@ -1,12 +1,52 @@
 Stupig Treffen vom 17. April 2015
 =================================
 
-Agenda
-------
 
 * Was habt ihr in den letzten 4 Wochen mit Python gemacht
+
+  - @bronsen: URL-Shortener mithilfe des Microframeworks falcon http://falconframework.org/ angefangen
+     es ist neu und gewinnt deshalb!! 
+     Plus: versucht einen API-Client für http://hummingbird.me/ zu schreiben
+  - @tw war auf der easterhegg, hat talk zu attic-backup.org gehalten (https://www.youtube.com/watch?v=96VEAAFDtJw) und http://media.ccc.de/browse/conferences/eh2015/eh15_-_49_-__-_saal_-_201504042130_-_attic_-_the_holy_grail_of_backups_-_thomas.html#video
+    gsoc review of students für moinmo.in
+  - Bira: Data processing in MATLAB -> Python (numPy), außerdem advanced medical f00, e.g. blood oxygen saturation
+  - @Laird_Dave hat sich über zu wenig Python können geärgert. Plaso verwendet (forensik) - http://plaso.kiddaland.net/ - ctypes ärger :( --- anderes Projekt: mathewettbewerb / numbercruncher / (https://github.com/Laird-Dave/numbercruncher) <- Feedback erwünscht
+  - michael -- prototyp um libreoffice dateien zu erzeugen
+  - (nichts)
+  - @jarus -- (nichts) - viel Python code gelesen - Python & Rust https://www.youtube.com/watch?v=3CwJ0MH-4MA  http://python.org/ und http://www.rust-lang.org/ Freight Sentry deployment system http://blog.getsentry.com/2015/04/15/introducing-freight.html
+
+http://pyformat.info
+
+  - @notanormalnerd - hat https://github.com/pika/pika verwendet / ftp module um dinge zu automatisieren
+  - @mfa -- https://github.com/opendata-stuttgart/ - http://api.dusti.xyz/v1/
+
+
 * Bericht vom Python-Camp von @mfa
+
+https://www.barcamptools.eu/pycamp201503/docpad
+
+- python 3 kann nicht jeder machen
+
+https://github.com/SAP/PyHDB/blob/master/pyhdb/_compat.py
+
+
+* @Laird_Dave erklärt plaso:
+
+  - journald -> plaso
+  - für angriffe finden / Forensik
+  - oder malware aufspüren
+  - logs werden auf zeit aufgetragen
+  - quellfile (bei @Laird_Dave) ist ein binärfile ... pain
+  
+
 * Bericht von der EasterHegg von @tw und @bronsen
+
+- war in braunschweig
+- next in salzburg
+- Videos gibs hier: http://media.ccc.de/browse/conferences/eh2015/
+- Physik-Vorträge am ersten Abend waren wohl gut und unterhaltsam.
+
+
 * Feinstaub-Sensor-API Projekt von @mfa (-> https://github.com/opendata-stuttgart )
 
   - Django-Rest-Framework: https://api.dusti.xyz
@@ -15,6 +55,30 @@ Agenda
   - Ziel (future): ein STM32? wenn der ESP8266 nicht mehr reicht
   - die DRF-API braucht ein Nutzerfrontend? aktuell alles über /admin
   - auch der Raspberry code ist erstmal auf funktioniert gebaut
+  
+  Siehe auch: http://codefor.de/stuttgart/index.html
 
-* @mfa kann einen Python-API-Client zeigen, der auf Arbeit entstanden ist
-* letusorder.it braucht auch so was
+* werbung für http://www.stuttgarter-zeitung.de/openvvs
+
+* letusorder.it braucht auch so was ... und zwar einen api-client
+
+* wie ist die performance von https://docs.python.org/3.4/library/multiprocessing.html
+
+  - dinge werden gepicklet
+
+
+PyCon15 Videos
+--------------
+
+Channel: https://www.youtube.com/channel/UCgxzjK6GuOHVKR_08TT4hJQ
+
+Empfehlungen:
+Christophe Pettus - PostgreSQL Proficiency for Python People
+https://www.youtube.com/watch?v=78A2gJBgL9g
+@Jarus: Christophe ist immer gut und sinnvoll anzuhöhren wenn man etwas mit PostgreSQL + Python macht.
+
+Andrew T. Baker - Demystifying Docker
+https://www.youtube.com/watch?v=GVVtR_hrdKI
+
+Fire your supervisord running Python apps on CoreOS
+https://www.youtube.com/watch?v=jCor69OeR0g
