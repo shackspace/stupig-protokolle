@@ -1,0 +1,9 @@
+Stupig Treffen vom 1. Mai 2015
+==============================
+
+Agenda
+------
+
+* Was habt ihr in den letzten 2 Wochen mit Python gemacht
+
+(weitere Vorschläge bitte einfügen)
