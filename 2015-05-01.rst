@@ -5,5 +5,10 @@ Agenda
 ------
 
 * Was habt ihr in den letzten 2 Wochen mit Python gemacht
+* Wie stellt ihr euch den Workshop vor?
+
+  - einen Vortrag pro Treffen? (muss halt jemand machen/organisieren)
+  - mehr hacken? in Gruppen?
+  - oder doch eher einen Stammtisch (Pizza essen)?
 
 (weitere Vorschläge bitte einfügen)
