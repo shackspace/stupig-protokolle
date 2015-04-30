@@ -13,4 +13,7 @@ Agenda
   
   - bronsen möchte mal versuchen, wie der Abend mit einem Moderator abläuft. bronsen wird die Rolle dieses Moderators ausgeübt haben
 
+* @mfa möchte für dustix eine cache-view einbauen. mit redis als cache.
+
+
 (weitere Vorschläge bitte einfügen)
