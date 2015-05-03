@@ -1,19 +1,73 @@
 Stupig Treffen vom 1. Mai 2015
 ==============================
 
-Agenda
-------
+Was habt ihr in den letzten 2 Wochen mit Python gemacht
+-------------------------------------------------------
 
-* Was habt ihr in den letzten 2 Wochen mit Python gemacht
-* Wie stellt ihr euch den Workshop vor?
+@tw: 
+hat sich angeschaut wie man mit Python Multiprocessing und Multithreading macht; hat komisches Verhalten von nsupdate.info entkäfert: es war ein ausgefallener Nameserver mit unbrauchbaren Fehlermeldungen.
 
-  - einen Vortrag pro Treffen? (muss halt jemand machen/organisieren)
-  - mehr hacken? in Gruppen?
-  - oder doch eher einen Stammtisch (Pizza essen)?
-  
-  - bronsen möchte mal versuchen, wie der Abend mit einem Moderator abläuft. bronsen wird die Rolle dieses Moderators ausgeübt haben
+@mfa: 
+daten an die dustix api schicken:
+https://github.com/opendata-stuttgart/sensors-software/tree/master/raspberry-serial (noch Python 2.7) mit raspian
 
-* @mfa möchte für dustix eine cache-view einbauen. mit redis als cache.
+@bronsen: 
+bluetooth sachen mit serial am raspberry für infuanfu
+
+@georg:
+ist Neueinsteiger, arbeitet ein Python-Lehrbuch durch
+
+@david:
+hat noch nie was mit Python gemacht, wurde aber an der Uni durch Java verdorben
 
 
-(weitere Vorschläge bitte einfügen)
+Multiprocessing / Multithreading mit Python
+-------------------------------------------
+
+tw führt aus; Erfahrungen aus der Arbeit an http://attic-backup.org/
+
+Die Software hat zuwenig CPU-Last verursacht, obwohl sie sehr viel Hashes berechnet und Daten komprimiert. TW erläutert den prinzipiellen Ablauf wie die Daten in attic fließen (ioread, hash, compress, iowrite). {{{ Whiteboard abfotografieren und Bild einfügen }}}
+
+Der GIL hilft an dieser Stelle auch nicht wirklich (keine echte Parallelisierung).
+
+Ansatz: Reader thread, der Datei leist und deren Chunks in eine Input-Queue einreiht. Die multiplen Cryptothreads arbeiten die Chunks aus der Input-Queue ab. Die Ergebnisse der Cryptothreads kommen in eine Output-Queue, welche wiederum von einem Writerthread auf die Platte geschrieben werden. Threadsafety?
+
+TW zeigt echten Code aus "seinem" attic, der aber noch experimental ist.  
+
+verwendet: https://docs.python.org/3/library/queue.html
+
+ein passender Talk von der Pycon 2015: https://www.youtube.com/watch?v=MCs5OvhV9S4 (46 Minuten)
+
+
+Cache View für Dustix mit Redis
+-------------------------------
+
+http://www.dusti.xyz/
+
+wird auf (über)nächstes mal verschoben und dann gezeigt was gemacht wurde.
+https://raw.githubusercontent.com/opendata-stuttgart/meta/master/images/prototype_28-04-15.jpg
+
+Am 19. Mai um 19:00 Uhr findet im Seminarraum des shackspaces das OK-Lab Hardwaretreffen statt.
+
+
+Fragen der Anfänger (Antworten der Alten Säcke^WHasen)
+------------------------------------------------------
+
+Django: http://djangoproject.com/
+PyCharm Community Edition: https://www.jetbrains.com/pycharm/download/, wobei andere Tools auch sehr gut funktionieren.
+
+Schicker als Python in der shell ist dann ipython oder bpython; oder auch IPython Notebook für Python im Browser.
+
+bronsen predigt testgetriebenes Programmieren auch für Anfänger, weil es gut & richtig & schön ist.
+
+https://twitter.com/sempf/status/514473420277694465
+
+Taschenrechner mit pytest: https://abhisheksingh01.wordpress.com/2013/01/01/pytest-an-automation-testing-tool/
+
+Die alten Hasen geben mit ihren tollen Spielzeugen an: Elasticsearch, Docker
+
+
+ferner liefen
+-------------
+http://www.mikrocontroller.net/articles/ESP8266
+
