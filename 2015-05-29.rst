@@ -1,0 +1,10 @@
+Stupig Treffen vom 29. Mai 2015
+===============================
+
+Agenda
+------
+
+* Was habt ihr in den letzten 2 Wochen mit Python gemacht
+* Nachbericht von der Python Sweden (@mfa)
+
+(weitere Vorschläge bitte einfügen)
