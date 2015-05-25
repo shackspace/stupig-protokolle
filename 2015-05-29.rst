@@ -6,5 +6,6 @@ Agenda
 
 * Was habt ihr in den letzten 2 Wochen mit Python gemacht
 * Nachbericht von der Python Sweden (@mfa)
+* letusorderit-api mit https://github.com/transcode-de/durga versuchen
 
 (weitere Vorschläge bitte einfügen)
