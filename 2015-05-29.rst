@@ -1,11 +1,192 @@
 Stupig Treffen vom 29. Mai 2015
 ===============================
 
-Agenda
-------
 
-* Was habt ihr in den letzten 2 Wochen mit Python gemacht
-* Nachbericht von der Python Sweden (@mfa)
-* letusorderit-api mit https://github.com/transcode-de/durga versuchen
+Pycon Werbung
+-------------
 
-(weitere Vorschläge bitte einfügen)
+Wie wäre es mit der Pycon Japan :)
+http://www.pycon.jp/
+
+
+Was habt ihr in den letzten 2 Wochen mit Python gemacht
+-------------------------------------------------------
+
+* @tw -- moinmoin gsoc; borg multithreading code; http://borgbackup.github.io/
+* @bronsen -- Geld verdient
+* @daniel -- selten hier; weil weg weit; soll besser kein try/except ohne exception angabe machen. :)
+* @notanormalnerd -- rabbitmq + pika -- verdient zu 50% geld mit python :)
+* @mfa -- verdient Geld mit Python; fummelt am feinstaub für oklab (http://luftdaten.info/ http://api.dusti.xyz/ ) - hardwaretreffen 2. Dienstag im Monat im shackspace
+* @kurt -- will Python lernen. will mehr Software verstehen, die er verwendet. Druckdaten/PDF ist sein Thema. hat derzeit Schwierigkeiten, askbot (https://github.com/ASKBOT/askbot-devel/ ) zum Laufen zu kriegen
+
+
+
+PIP vs. Easy_Install
+--------------------
+
+http://trizpug.org/Members/cbc/wyntkap/img/python_comrades.png
+
+@Dennis hat erklärt warum man pip verwendet.
+http://i.imgur.com/LhkP0Uv.jpg
+
+
+GPN15
+-----
+
+Geht zur GPN nächstes Wochenende (4.6.-7.6.): https://entropia.de/GPN15
+
+
+Diskussion Markdown vs. RST
+---------------------------
+
+* pro Markdown
+
+  - verbreiteter
+  - weniger ausdrucksstark im default
+  - hat viele Erweiterungen
+  - ist auf github der default
+  
+* pro restructered text
+
+  - sehr verbreitet in der Python-Welt
+  - wird gebraucht für sphinx
+  - @bronsen behauptet, dass komplexere dinge mit rst möglich sind 
+
+
+Nachbericht von der Python Sweden (@mfa)
+----------------------------------------
+
+http://www.pycon.se/
+
+* Keynote: Ian Ozsvald
+
+  - Autor von "High Performance Python" from O'Reilly
+  - Visualiert Daten für Firmen
+  - Arbeitet gerade bei einer firma, die recruiting automatisieren möchte
+  - sie analysieren lebensläufe und matchen darauf jobstellen
+  - mit viel statistik
+  - visualisierungen mit bokeh (anstelle von matplotlib)
+  - gute daten sind besser als schlechtes in großer menge (big data)
+  - slides: https://speakerdeck.com/ianozsvald/pyconse-2015-opening-keynote-data-science-delivered
+
+
+* Analyzing data with Pandas
+
+  - hat einige tricks mit Pandas gezeigt, die ich noch nicht kannte
+  - Pandas entwickelt sich in der Pythonwelt zum standard für tabellenbasierte Daten
+  - pandas kann beide backends: openpyxl / xlrd
+
+
+* Docker and Python at Spotify
+
+  - verwenden puppet für die server
+  - fabric fürs deployment
+  - docker verwendet erstmal nur ein squad bei Spotify
+
+
+* Deep Learning and Deep Data Science
+
+  - deep learning ist gerade der hippe shit
+  - verwendet neuronale netze, bei denen man allerdings die einzelschritte sehen kann
+  - am beispiel von einem hunde vs. katzen entscheider
+  - die neuronalen netze erreichen über 90% konfidenz
+  - Facebook und Google haben die führenden leute in der szene inzw. eingestellt
+  - NLP mit deep learning ist das nächste Ding
+  - siehe das neue google photos
+  
+* Hacking Human Language
+
+  - vortragender stellt seine masterarbeit vor
+  - gensim
+  - spaCy
+  - für NLP interessierte ein sehr interessanter Talk!
+  - Slides: https://dl.dropboxusercontent.com/u/5041011/Heuer_Hacking_Human_Language_PyCon.pdf
+
+
+* IPython: How a notebook is changing science
+
+  - war intro in ipython von einem astrophysiker
+  - seine deutlich cooleren dinge hat er in einem lightning-talk gezeigt.
+  - ein ipython-nodebook mit webgl und reglern um kometenbahnen zu verändern
+
+* Building an interpreter in RPython
+
+  - grundlagen wie rpython funktioniert
+  - rpython ist die basis von u.a. pypy
+
+
+* Keynote: Kate Heddleston
+
+  - über verantwortung von codern
+  - vergleiche mit ärzten, juristen
+  - am beispiel von #gamergate -- was sollte/kann twitter tun
+  - am beispiel von snapchat -- wird auch von minderjährigen genutzt um bilder zu sharen, die sie nicht sharen sollten
+  - sie verwendet flask für ihre projekte
+  - pyladies fame in LA
+  - hat getweetet, dass sie in stockholm eine keynote halten will, und eine firma, die sie bisher nicht kannte, hat ihr die reise gezahlt
+
+* Why Django Sucks
+
+  - doppeltes templating django - javascript
+  - push fehlt in django. jede moderne webapp hat das inzw.
+  - gerade push sollte in django-core. Er hat recht!
+
+* How Python drives the analysis of billions of DNA sequences
+
+  - part 1: automatisierungs-pipeline von der DNA-probe über den sequenzer zum datastore und analyse
+  - viel python
+  - viel NIH
+  - part 2: flask-mongodb-app um es ärzten zu ermöglichen DNA daten besser filtern zu können
+  - war vorher mit vermailen von excel files
+  - war mit emberjs. war zu langsam weil die tabellen zu groß wurden
+  - dann nur noch rendering auf serverseite. sehr viel weniger JS
+  - zielgruppe erwartet auch keine flashy dinge
+  - beides coole usecases für python, die einfach nur je ein problem lösen. und dies gut.
+
+* Embedded Python in practice
+
+  - python auf embedded hardware
+  - schwierig ist das locking in python. weil es nicht wirklich echtes locking ist
+  - generell memory. der garbage collector failt gerade bei langlaufenden prozessen. und so manche embedded hardware läuft sehr lange
+  - haben bei einem lightning-talk gezeigt, wie man auf allen betriebssystemen den ipv6-stack trollen kann
+
+* How to build a Python web application with Flask and Neo4j
+
+  - ist statistikerin
+  - macht eigentlich R mit neo4j
+  - arbeitet für die firma hinter neo4j
+  - hat live eine flask-anwendung gezeigt, bei der die anwesenden sich anmelden konnten und der graph ihrer likes und comments wurde live aktualisiert.
+
+* GitFs - Building a file system in Python
+
+  - zweck: nutzen gehen per sftp auf ein share und alles was sie darauf machen ist ein git. automatisch.
+  - sieht eher aus wie ein cornercase. aber vielleicht interessante implementierung
+
+* Python for Humans
+
+  - Kenneth Reitz
+  - wir sollen uns schlechten APIs annehmen und coole daraus machen
+  - beispiel: requests
+  - was jemand machen pythonischer sollte: subprocess, sys/os/..., lxml/etree
+
+* sponsor plotly
+
+  - lightningtalk.
+  - sieht gut aus
+  - plots werden in diesem internet shareable
+  - inklusive daten, code (umwandelbar zwischen R, python, matlab)
+
+* andere talks
+
+  - https://speakerdeck.com/halflings/pycon-sweden-ml-and-data-science-with-python
+  - http://www.slideshare.net/FlaviaMissi/tdd-withpythonanddjango
+
+
+Diskussion über durga oder zipa
+-------------------------------
+
+- https://github.com/transcode-de/durga
+- https://github.com/PressLabs/zipa
+
+Nur für einfache APIs. Mglw. ist Objekte, die auch die Logik im Client aufzeigen häufiger sinnvoll.
+
