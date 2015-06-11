@@ -26,7 +26,7 @@ PIP vs. Easy_Install
 
 http://trizpug.org/Members/cbc/wyntkap/img/python_comrades.png
 
-@Dennis hat erklärt warum man pip verwendet.
+@NotANormalNerd hat erklärt warum man pip verwendet.
 http://i.imgur.com/LhkP0Uv.jpg
 
 
