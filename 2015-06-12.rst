@@ -1,0 +1,91 @@
+Stupig Treffen vom 12. Juni 2015
+================================
+
+
+Was habt ihr in den letzen 2 Wochen mit Python gemacht?
+-------------------------------------------------------
+
+@notanormalnerd auf der Arbeit mit python Dinge gemacht: Text-files parsen. https://github.com/martinrusev/imbox ist imap for humans. Hatte probleme mit Python3. Will mails von einem imap-Ordner in einen anderen verschieben per cron.
+
+
+@bronsen hat ein URL-Kürzungsprojekt mit Tests nochmal angefangen, nachdem der Prototyp funktioniert hat. Hat pytest-selenium verwendet, ist cool weil multibrowser. Hat dafür falconframework.org verwendet: sehr rest-sprechig. War auf der DjangoCon Europe in Cardiff.
+
+
+Frank war auf der PyData in Berlin. War im Betahaus. Inhaltlich war es im jahr 2014 besser. Hat Bokeh für sich entdeckt: http://bokeh.pydata.org/en/latest/. 
+Anaconda ist super, binary package manager.
+Hat sich zur EuroPython angemeldet.
+
+
+@mfa http://www.killedbypolice.net/ mit ipython notebook analysieren. Sonst lötet er zuviel. War auf der DjangoCon Europe in Cardiff.
+
+
+@tw hat borg-backup released! version 0.23 ist jetzt draußen. Macht Releaseplanung. Hat noch immer nicht moinmoin 2.0 released. :)
+
+
+
+Was habe ihr Tolles gelernt?
+----------------------------
+
+@notanormalnerd War auf der GPN und hat gelernt dass man immer Patchkabel mitnehmen soll. Fand, dass komische Leute auf der GPN waren. 
+
+
+@mfa Wetter ist Wetter und manchmal überraschend: in Cardiff wars besser als in Stuttgart; kann Teile auf Lochrasterplatinen zusammenhunzen.
+
+
+@asmaps push mit websockets ist voll geil, und django kann das wohl auch ganz gut mit swampdragon - http://swampdragon.net/
+
+
+Frank hat dringend Urlaub auf der EuroPython nötig.
+
+
+@bronsen hat was über Fotografie gerlernt. Blitze mit fernsteuern ist toll. Licht von links oben ist da wo man die Sonne erwartet. Frontalblitz ist doof.
+
+
+@tw wenn man 4k anschliesst, dann ist der Lüfter ordentlich am arbeiten, weil die Graka am schaffen ist. Hatte auch Freude mit Fonts, weil 4k echt klein wird.
+
+
+Kämpfen mit Pixeln
+------------------
+
+@bronsen und @tw tauschen sich zu PyCharm und DPI und Fonts und so aus.
+
+
+
+Kurzberichtliche Zusammenfassung von Djangocon Europe 2015
+----------------------------------------------------------
+
+@bronsen & @mfa & @asmaps
+
+Waste-free conference ist voll gut: weniger Plastikmüll, weniger Essensreste die weggeworfen werden.
+Angebot für psychologische Beratung. Kam in einer Keynote vor. Mehr Bewußtsein für das Thema schaffend.
+First-time Speaker wurden gementored und sollten auch vortragen.
+Einiges an Diversity. Extrem gute hilfbereitschaft. Tolle Community.
+
+#notgermany: fast überall free wifi, auch im Bus vom/zum Flughafen!
+
+Führung des Stadtpoeten durch die Geschichte Cardiffs war sehr gut.
+
+Cardiff ist sehr walisisch: fast alle Schilder etc sind sowohl englisch als auch walisisch geschrieben. Fun Fact: Es gibt eine "Stuttgarter Straße": http://www.openstreetmap.org/way/26434503
+
+
+Unicode Snake #1F40D: ?? 
+Emoji Snake: http://www.fileformat.info/info/emoji/snake/index.htm
+
+Aufgeschnappt: pytest-cache -- tut.
+
+Coole Keynote: https://speakerdeck.com/bmispelon/baptistes-adventures-in-djangoland
+
+
+
+upcoming 
+--------
+
+EuroPython im Juli:  http://ep2015.europython.eu/
+
+WriteTheDocs Europe in Prag im September: http://www.writethedocs.org/conf/eu/2015/
+
+PyUnConf in Hamburg im September: http://www.pyunconf.de/
+
+DjangoUnderTheHood im November:  http://djangounderthehood.com/
+
+PyCon.CZ in Brno: http://cz.pycon.org/ (derzeit borken)
