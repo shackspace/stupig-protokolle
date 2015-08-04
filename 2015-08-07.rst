@@ -1,0 +1,50 @@
+Stupig Treffen vom 7. August 2015
+================================
+
+Agenda
+------
+
+* Was habt ihr in den letzen 2 Wochen mit Python gemacht?
+* Was habe ihr Tolles gelernt?
+
+EuroPython Recommended Talks by @NotANormalNerd
+-----------------------------------------------
+Day 1
+#####
+* Keynote Tag 1: Django Girls
+* Getting started with Bokeh - Data Visualization across languages, python/json/js interface
+* (It works on my machine) - For beginners working on multiple envs
+* Knowing your garbage collector - A insight into python GC, must watch
+* Sustainable way of testing - horrible presenter, interesting idea
+* writing quality code - code quality beyond subjective measurements
+* Lightning Talks!!!!!
+
+Day 2
+#####
+* Keynote Tag 2: Guido van Rossum
+* DEPOT- Storing files for the web - Flexibel file storage in the web, abstraction layer for static/uploaded stuff
+* TDD is not just about tests - not a must watch but still quite interesting
+* A deep look at logging - logging for absolute beginners
+
+Day 3
+#####
+* Keynote Tag 3: Towards a more effective, decentralized web - no red line in the presentation found
+* Guido talks about type hints and his PEP. Have a look whats coming
+* AsyncIO talks. Rooms were to small, will have to watch it myself, but seemed to be good.
+* Lightning Talks!!!!!
+
+Day 4
+#####
+* Tag 4: I missed the keynote and the morning, so no recommendations here
+* Python's Infamous GIL
+* Lightning Talks!!!!! <----- this one really... all the way to the end
+
+Day 5
+#####
+* Keynote Tag 5: So now I have all these Docker containers
+* Demystifying Mixins with Django - For absolute Django beginners
+* FOSS DOCS - How to do good foss docs in bigger projects
+* How to build a local community
+
+
+* Hear Thomas rant about the crypto talk (live@Python Workshop)
