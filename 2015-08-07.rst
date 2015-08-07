@@ -11,7 +11,8 @@ Was habt ihr in den letzen 2 Wochen mit Python gemacht?
 * @raja - python basics - python3 - pycharm
 * @markus - nichts
 
-* Was habt ihr Tolles gelernt?
+Was habt ihr Tolles gelernt?
+----------------------------
 
 * @bronsen - pull-requests sind auch in der firma eine tolle sache. und python3 hat generell gewonnen
 * @markus - hat sich borg-backup angeschaut und will es auf dem server verwenden
