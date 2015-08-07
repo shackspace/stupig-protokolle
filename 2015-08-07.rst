@@ -4,21 +4,21 @@ Stupig Treffen vom 7. August 2015
 Was habt ihr in den letzen 2 Wochen mit Python gemacht?
 -------------------------------------------------------
 
-@bronsen - nur in Job
-@frank - hat vvs gecrawlt. macht bokeh im job und war deshalb auf der europython -- will noch viel mehr mit bokeh machen
-@mfa - feinstaub-api (django) und shackbureau (django) -  vereinsverwaltung für den shack
-@tw - war auf der europython. pdf-viewer-js ohne abspeichern - neues release von borg-backup - http://nuitka.net/ ausprobiert. moinmoin-soc
-@raja - python basics - python3 - pycharm
-@markus - nichts
+* @bronsen - nur in Job
+* @frank - hat vvs gecrawlt. macht bokeh im job und war deshalb auf der europython -- will noch viel mehr mit bokeh machen
+* @mfa - feinstaub-api (django) und shackbureau (django) -  vereinsverwaltung für den shack
+* @tw - war auf der europython. pdf-viewer-js ohne abspeichern - neues release von borg-backup - http://nuitka.net/ ausprobiert. moinmoin-soc
+* @raja - python basics - python3 - pycharm
+* @markus - nichts
 
 * Was habt ihr Tolles gelernt?
 
-@bronsen - pull-requests sind auch in der firma eine tolle sache. und python3 hat generell gewonnen
-@markus - hat sich borg-backup angeschaut und will es auf dem server verwenden
-@frank - mehr python basics; viel bokeh internals; https://gitter.im/ chat mit history und github integration
-@mfa - pytest scoping ist nicht trivial und fehleranfällig
-@tw - profiler von intel ist wohl interessant. kann auch multithreading code. war ein talk auf der EP; vmprof ist auch ein profiler; statprof ist auch einer; und plopp; alle sollen besser sein als cprofile
-@raja - python
+* @bronsen - pull-requests sind auch in der firma eine tolle sache. und python3 hat generell gewonnen
+* @markus - hat sich borg-backup angeschaut und will es auf dem server verwenden
+* @frank - mehr python basics; viel bokeh internals; https://gitter.im/ chat mit history und github integration
+* @mfa - pytest scoping ist nicht trivial und fehleranfällig
+* @tw - profiler von intel ist wohl interessant. kann auch multithreading code. war ein talk auf der EP; vmprof ist auch ein profiler; statprof ist auch einer; und plopp; alle sollen besser sein als cprofile
+* @raja - python
 
 
 EuroPython Recommended Talks
