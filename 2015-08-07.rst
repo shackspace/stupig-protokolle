@@ -34,6 +34,12 @@ Day 1
 * Getting started with Bokeh - Data Visualization across languages, python/json/js interface (@notanormalnerd/@frank)
 * (It works on my machine) - For beginners working on multiple envs (@notanormalnerd)
 * Knowing your garbage collector - A insight into python GC, must watch (@notanormalnerd)
+
+  weiteres zum thema:
+  
+    https://blog.codeship.com/generational-gc-python-ruby/
+    https://blog.codeship.com/visualizing-garbage-collection-ruby-python/ 
+
 * Sustainable way of testing - horrible presenter, interesting idea (@notanormalnerd)
 * writing quality code - code quality beyond subjective measurements (@notanormalnerd)
 * Lightning Talks!!!!! (@notanormalnerd)
@@ -41,27 +47,27 @@ Day 1
 * less known packages features and tricks (@tw) / parallel war "pip internals"
 * nuitka (python compiler) (@tw) noch etwas beta. aber schon recht weit
 
-
-
 Day 2
 #####
-* Keynote Tag 2: Guido van Rossum (@notanormalnerd)
+* Keynote Tag 2: Guido van Rossum (@notanormalnerd, @tw)
 * DEPOT- Storing files for the web - Flexibel file storage in the web, abstraction layer for static/uploaded stuff (@notanormalnerd)
 * TDD is not just about tests - not a must watch but still quite interesting (@notanormalnerd)
-* A deep look at logging - logging for absolute beginners (@notanormalnerd)
+* A deep look at logging - logging for absolute beginners (@notanormalnerd, @tw) - highlight: https://structlog.readthedocs.org/en/stable/
+* get native with cython (@tw)
 
 Day 3
 #####
-* Keynote Tag 3: Towards a more effective, decentralized web - no red line in the presentation found (@notanormalnerd)
-* Guido talks about type hints and his PEP. Have a look whats coming (@notanormalnerd)
+* Keynote Tag 3: Towards a more effective, decentralized web - no red line in the presentation found (@notanormalnerd) - ipfs
+* Guido talks about type hints and his PEP. Have a look whats coming (@notanormalnerd, @tw)
 * AsyncIO talks. Rooms were to small, will have to watch it myself, but seemed to be good. (@notanormalnerd)
 * Lightning Talks!!!!! (@notanormalnerd)
 
 Day 4
 #####
-* Tag 4: I missed the keynote and the morning, so no recommendations here (@notanormalnerd)
+* keynote (@tw)
 * Python's Infamous GIL (@notanormalnerd)
 * Lightning Talks!!!!! <----- this one really... all the way to the end (@notanormalnerd)
+* cookiecutter (@tw)
 
 Day 5
 #####
@@ -69,6 +75,19 @@ Day 5
 * Demystifying Mixins with Django - For absolute Django beginners (@notanormalnerd)
 * FOSS DOCS - How to do good foss docs in bigger projects (@notanormalnerd)
 * How to build a local community (@notanormalnerd)
+* tuning python applications (@tw) vortragender von intel
 
+* harry percival. TDD with django/python
 
 * Hear Thomas rant about the crypto talk (live@Python Workshop)
+
+DjangoGirls
+-----------
+
+Diskussion, ob wir sowas unterstützen/durchführen helfen würden. Ja. gerne!
+
+
+Am 17. August gibt es DjangoUnderTheHood tickets. Wahrscheinlich schnell ausverkauft!!
+
+
+
