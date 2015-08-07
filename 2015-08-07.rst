@@ -1,50 +1,74 @@
 Stupig Treffen vom 7. August 2015
-================================
+=================================
 
-Agenda
-------
+Was habt ihr in den letzen 2 Wochen mit Python gemacht?
+-------------------------------------------------------
 
-* Was habt ihr in den letzen 2 Wochen mit Python gemacht?
-* Was habe ihr Tolles gelernt?
+@bronsen - nur in Job
+@frank - hat vvs gecrawlt. macht bokeh im job und war deshalb auf der europython -- will noch viel mehr mit bokeh machen
+@mfa - feinstaub-api (django) und shackbureau (django) -  vereinsverwaltung für den shack
+@tw - war auf der europython. pdf-viewer-js ohne abspeichern - neues release von borg-backup - http://nuitka.net/ ausprobiert. moinmoin-soc
+@raja - python basics - python3 - pycharm
+@markus - nichts
 
-EuroPython Recommended Talks by @NotANormalNerd
------------------------------------------------
+* Was habt ihr Tolles gelernt?
+
+@bronsen - pull-requests sind auch in der firma eine tolle sache. und python3 hat generell gewonnen
+@markus - hat sich borg-backup angeschaut und will es auf dem server verwenden
+@frank - mehr python basics; viel bokeh internals; https://gitter.im/ chat mit history und github integration
+@mfa - pytest scoping ist nicht trivial und fehleranfällig
+@tw - profiler von intel ist wohl interessant. kann auch multithreading code. war ein talk auf der EP; vmprof ist auch ein profiler; statprof ist auch einer; und plopp; alle sollen besser sein als cprofile
+@raja - python
+
+
+EuroPython Recommended Talks
+----------------------------
+
+https://ep2015.europython.eu/en/
+https://www.youtube.com/user/PythonItalia/videos?view=0&shelf_id=5&sort=dd
+
+
 Day 1
 #####
-* Keynote Tag 1: Django Girls
-* Getting started with Bokeh - Data Visualization across languages, python/json/js interface
-* (It works on my machine) - For beginners working on multiple envs
-* Knowing your garbage collector - A insight into python GC, must watch
-* Sustainable way of testing - horrible presenter, interesting idea
-* writing quality code - code quality beyond subjective measurements
-* Lightning Talks!!!!!
+* Keynote Tag 1: Django Girls [Ola & Ola] (@notanormalnerd/@tw)
+* Getting started with Bokeh - Data Visualization across languages, python/json/js interface (@notanormalnerd/@frank)
+* (It works on my machine) - For beginners working on multiple envs (@notanormalnerd)
+* Knowing your garbage collector - A insight into python GC, must watch (@notanormalnerd)
+* Sustainable way of testing - horrible presenter, interesting idea (@notanormalnerd)
+* writing quality code - code quality beyond subjective measurements (@notanormalnerd)
+* Lightning Talks!!!!! (@notanormalnerd)
+* functional programming and transducers (@frank) [tutorial; vielleicht nicht montag; kein video, aber blogposts vom autor.]
+* less known packages features and tricks (@tw) / parallel war "pip internals"
+* nuitka (python compiler) (@tw) noch etwas beta. aber schon recht weit
+
+
 
 Day 2
 #####
-* Keynote Tag 2: Guido van Rossum
-* DEPOT- Storing files for the web - Flexibel file storage in the web, abstraction layer for static/uploaded stuff
-* TDD is not just about tests - not a must watch but still quite interesting
-* A deep look at logging - logging for absolute beginners
+* Keynote Tag 2: Guido van Rossum (@notanormalnerd)
+* DEPOT- Storing files for the web - Flexibel file storage in the web, abstraction layer for static/uploaded stuff (@notanormalnerd)
+* TDD is not just about tests - not a must watch but still quite interesting (@notanormalnerd)
+* A deep look at logging - logging for absolute beginners (@notanormalnerd)
 
 Day 3
 #####
-* Keynote Tag 3: Towards a more effective, decentralized web - no red line in the presentation found
-* Guido talks about type hints and his PEP. Have a look whats coming
-* AsyncIO talks. Rooms were to small, will have to watch it myself, but seemed to be good.
-* Lightning Talks!!!!!
+* Keynote Tag 3: Towards a more effective, decentralized web - no red line in the presentation found (@notanormalnerd)
+* Guido talks about type hints and his PEP. Have a look whats coming (@notanormalnerd)
+* AsyncIO talks. Rooms were to small, will have to watch it myself, but seemed to be good. (@notanormalnerd)
+* Lightning Talks!!!!! (@notanormalnerd)
 
 Day 4
 #####
-* Tag 4: I missed the keynote and the morning, so no recommendations here
-* Python's Infamous GIL
-* Lightning Talks!!!!! <----- this one really... all the way to the end
+* Tag 4: I missed the keynote and the morning, so no recommendations here (@notanormalnerd)
+* Python's Infamous GIL (@notanormalnerd)
+* Lightning Talks!!!!! <----- this one really... all the way to the end (@notanormalnerd)
 
 Day 5
 #####
-* Keynote Tag 5: So now I have all these Docker containers
-* Demystifying Mixins with Django - For absolute Django beginners
-* FOSS DOCS - How to do good foss docs in bigger projects
-* How to build a local community
+* Keynote Tag 5: So now I have all these Docker containers (@notanormalnerd)
+* Demystifying Mixins with Django - For absolute Django beginners (@notanormalnerd)
+* FOSS DOCS - How to do good foss docs in bigger projects (@notanormalnerd)
+* How to build a local community (@notanormalnerd)
 
 
 * Hear Thomas rant about the crypto talk (live@Python Workshop)
