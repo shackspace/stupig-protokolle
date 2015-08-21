@@ -1,0 +1,66 @@
+Stupig Treffen vom 21. August 2015
+==================================
+
+Was habt ihr in den letzen 2 Wochen mit Python gemacht?
+-------------------------------------------------------
+
+* @mfa - nur auf arbeit viel python geschrieben
+* @jarus - hat bachelor geschrieben. ist aber geheim. aber mit python.
+* @nicolas - hat gehört, dass man scripte in python gut schreiben kann
+* @mfk - nur auf arbeit
+* @frank - functional programming in python gelesen. "fluent python" ist gut. 
+* @rafa - nutzt jetzt fabric. hat flask ausprobiert. nutzt checkmk.
+
+
+Was habt ihr Tolles gelernt?
+----------------------------
+
+* @mfa - analag-störung in der elekrotechnik
+* @jarus - zookeeper taugt voll gut. mesos ist auch gut. mesos kann auch mit echt vielen servern.
+* @nicolas - klausurenzeit.
+* @mfk - "git grep" ist gut.
+* @frank - angebot schreiben. functional python.
+* @rafa - fabric, flask, pulseaudio versuche
+
+
+next
+----
+
+mal im workshop djangogirls durchzuarbeiten um zu sehen wie das taugt.
+
+
+Bücher / Buchclub
+-----------------
+
+* Bücher:
+
+- "fluent python" - 
+- "Building Microservices" - erklärt gut wie man heute verteilte/skalierbare systeme baut
+
+* wie wäre ein book reading club zu it-based-books?
+  - abstimmung welches buch
+  - beim treffen austausch, was man aus dem buch mitgenommen hat
+  - monatlich ist mglw. zu häufig. aber 2 oder 3 monatig?
+
+* Webseite für den Buchclub in Django schreiben. als Workshop-Projekt.
+
+
+
+Firewall
+--------
+
+http://varia-store.com/Ready-Systems/pfSense/pfSense-ready-system-with-APU1D4-board-1GHZ-Dual-Core-4GB-RAM::3166.html?XTCsid=0urm08p4d05dfo7ild4atmi536
+http://varia-store.com/Wireless-Systems/UBIQUITI-UniFi:::636_655.html
+
+
+Docker
+------
+
+https://quay.io/
+
+
+Django hat auch inspection!
+---------------------------
+
+https://docs.djangoproject.com/en/1.8/howto/legacy-databases/
+
