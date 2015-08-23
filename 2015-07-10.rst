@@ -2,10 +2,6 @@ Stupig Treffen vom 10. Juli 2015
 ================================
 
 
-Agenda
-------
-
-* Was habt ihr in den letzen 2 Wochen mit Python gemacht?
-* Was habe ihr Tolles gelernt?
-* @mfa hat Django performance probleme mit der feinstaub-api
-* ...
+Heute 6 Neulinge und shackspace Erstlinge.
+* Erklärt wie Django funktioniert.
+* viele Fragen zu Python beantwortet.
