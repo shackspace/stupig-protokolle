@@ -1,0 +1,41 @@
+Stupig-Treffen vom 4. September 2015
+====================================
+
+Anwesende:
+ * tw
+ * bronsen
+ 
+ 
+
+Neues Lizenzmodell vom Jetbrains
+--------------------------------
+
+Jetbrains will also die Lizenzen und ihren revenue stream optimieren. In der Diskussion stellt sich heraus, dass die Änderungen nicht so ganz verständlich sind; die als verstanden empfundenen Änderungen werden mit jeweils unterschiedlicher Begeisterung aufgenommen.
+
+http://blog.jetbrains.com/blog/2015/09/03/introducing-jetbrains-toolbox/
+
+
+
+Dateinamen in diversen Dateisystemen
+------------------------------------
+
+Manche Dateisysteme bzw manche Betriebssystemabstraktionen ebendieser Dateisysteme könnenwollen nicht konsistent zwischen Groß- und Kleinschreibung unterscheiden.
+
+Dies kann zu Überraschungen führen, wenn man ein weniger beklopptes Betriebssystem verwendet und sowohl `file` als auch `File` ins Repo eincheckt.
+
+
+
+Pypy, Performance
+-----------------
+
+Ein Talk zu diesem Thema: "Alex Gaynor: Fast Python, Slow Python": https://youtu.be/7eeEf_rAJds (Pycon 2014)
+
+
+
+Intermission und blahblah
+-------------------------
+
+* Borgbackup hacken
+* Bountysource gucken
+* pl.pycon.org
+* warten auf godot
