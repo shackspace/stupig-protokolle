@@ -1,0 +1,121 @@
+Stupig-Treffen vom 18. September 2015
+=====================================
+
+
+Python 3.5 is draußen
+---------------------
+
+yay!!
+
+https://docs.python.org/3.5/whatsnew/3.5.html
+
+Die spannendsten Neuerungen:
+ - OrderedDict ist schneller
+ - os.scandir ist schnell
+ - neue Syntax für await und async (yay?)
+ - besserer Virtualenv-Support unter Windows
+ - SSL3 fliegt raus
+ - Typehints endlich standardisiert
+ 
+
+Was habt ihr in den letzen 2 Wochen mit Python gemacht?
+-------------------------------------------------------
+
+@bronsen: BDD mit pytest - https://pypi.python.org/pypi/pytest-bdd Geht, aber könnte besser/ausführlicher dokumentiert sein (I see a PR)
+
+@mfa: feinstaub-api-rest-client
+
+@michael: fluent python buch angefangen. (bronsen bestätigt, dass es gut ist.) http://shop.oreilly.com/product/0636920032519.do
+
+@frank: Microservices-Buch gelesen (http://shop.oreilly.com/product/0636920033158.do doch nicht so gut wie erwartet), PyUnConf, infinitest (Java, Tip von @bruderstein war eigentlich http://wallabyjs.com )
+
+@ulrich: pelican zum ersten mal erfolgreich verwendet :-) 
+
+@daniel: wenig; diagramme malen mit seqdiag oder mit yEd
+
+@tw: reportlab, pypdf2 ist lahm, pdfrw (https://pypi.python.org/pypi/pdfrw) ist simpler und schneller; borgbackup (https://pypi.python.org/pypi/borgbackup) neue features, bald neues release, tests mit vagrant,
+
+
+Rückblick PyUnConf
+------------------
+
+TDD for APIs: Vortrag, aber zu viele Folien http://www.youtube.com/watch?v=Okz6agNgaTA
+
+Django Rest Framework: Q-and-A; u.A. wofür ist es gut
+
+Pandas Intro: live log analyse in nem jupyter notebook
+
+Space Debris: sehr geil, leider wenig Python
+
+aus den Lightning Talks: 
+ - http://863.io/
+ - Raspi Ampel, oder woanders fertig http://www.cleware-shop.de/epages/63698188.sf/de_DE/?ObjectPath=/Shops/63698188/Products/41/SubProducts/41-1
+ - OSM in 3D http://www.slideshare.net/martinchristen/openstreetmap-in-3d-using-python 
+ - http://www.geopython.net/
+ - https://pypi.python.org/pypi/pytest-testmon
+ - https://github.com/papaeye/pytest-httpretty
+ - http://daniel.hepper.net/blog/2015/09/selling-python/
+ - pythex.org
+ - http://enigmabrot.de/twitterbots/index.html#/
+
+Queue instead of Lock - Go in Python
+
+
+Feinstaub-Monitoring-Script (@mfa)
+----------------------------------
+Hardware ist ein Arschloch.
+
+Sensoren pushen Nachrichten und sterben manchmal ab. Monitoring soll benachrichtigen, wenn ein Sensor seit 5 Minuten nicht mehr gepusht hat; Bonus: Monitoring soll benachrichtigen, wenn der Sensor wieder da ist.
+
+Damit dies geht, muss lokal gespeichert werden, wann der letzte Push eines Sensors war. 
+
+Vorschlag von bronsen: Timestamp in eine Datei schreiben, deren Namen sich aus der Sensor-ID ableitet.
+
+https://github.com/opendata-stuttgart/feinstaub-monitoring-client-python/blob/master/monitor.py
+
+
+BookClubSite (BCS) -- IT-Toshokan
+---------------------------------
+Bikeshedding:
+ * was soll damit gemacht werden?
+ 
+Evtl muss man nichts selber programmieren und kommt mit Github Issues ausreichend weit. Die Issues kann man ja taggen, um verschiedene Workflows abzubilden.
+
+Eine Meetup-Gruppe klingt auch nicht schlecht: es braucht jemanden, der organisiert und bezahlt und kümmert.
+
+http://www.ala.org/tools/atoz/book-discussion-grps gibt Quickstarthilfe und Best Practices.
+
+Topics:
+- Name
+  Read IT
+  Der Club der toten Bäume
+  My Little Ebook
+  BookStackOverflow
+  Read or Die
+  Toshokan Sensou
+  IT Toshokan
+  IT 図書館  +1
+  Bücherleserei
+  Schwarz auf Weiß
+  IT Bücherleserei
+  man liest sich
+  read to meet, oder meet to read
+  Bücherfreunde
+  Die Freunde der Bücher
+  Readme
+  RTFM
+  
+- Repo    
+  https://github.com/shackspace/IT-Toshokan
+  der bronsen wird eine Erklärbärreadme verfasst haben.
+
+https://en.wikipedia.org/wiki/Book_discussion_club
+https://en.wikipedia.org/wiki/Literature_circle
+
+
+Anstehende Veranstaltungen
+--------------------------
+
+- https://pycon.jp/2015/ja/ - 9.-12. Oktober 2015
+- PyCon Ireland, 24. bis 25. October 2015
+- pycon.cz 14. bis 15. November, eine Woche nach Django Under the Hood
