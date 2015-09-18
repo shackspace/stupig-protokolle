@@ -87,23 +87,24 @@ http://www.ala.org/tools/atoz/book-discussion-grps gibt Quickstarthilfe und Best
 
 Topics:
 - Name
-  Read IT
-  Der Club der toten Bäume
-  My Little Ebook
-  BookStackOverflow
-  Read or Die
-  Toshokan Sensou
-  IT Toshokan
-  IT 図書館  +1
-  Bücherleserei
-  Schwarz auf Weiß
-  IT Bücherleserei
-  man liest sich
-  read to meet, oder meet to read
-  Bücherfreunde
-  Die Freunde der Bücher
-  Readme
-  RTFM
+
+  *  Read IT
+  *  Der Club der toten Bäume
+  *  My Little Ebook
+  *  BookStackOverflow
+  *  Read or Die
+  *  Toshokan Sensou
+  *  IT Toshokan
+  *  IT 図書館  +1
+  *  Bücherleserei
+  *  Schwarz auf Weiß
+  *  IT Bücherleserei
+  *  man liest sich
+  *  read to meet, oder meet to read
+  *  Bücherfreunde
+  *  Die Freunde der Bücher
+  *  Readme
+  *  RTFM
   
 - Repo    
   https://github.com/shackspace/IT-Toshokan
