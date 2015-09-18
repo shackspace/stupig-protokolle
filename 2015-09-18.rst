@@ -86,6 +86,7 @@ Eine Meetup-Gruppe klingt auch nicht schlecht: es braucht jemanden, der organisi
 http://www.ala.org/tools/atoz/book-discussion-grps gibt Quickstarthilfe und Best Practices.
 
 Topics:
+
 - Name
 
   *  Read IT
