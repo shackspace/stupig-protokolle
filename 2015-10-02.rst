@@ -1,0 +1,65 @@
+=================
+Stupig 2015-10-02
+=================
+ 
+Agenda
+------
+ 
+* Große Datenmengen parallel aufnehmen und laufend wegspeichern (@hornig)
+ 
+ 
+The State of Unicode
+--------------------
+(@bronsen & @tw)
+ 
+Auch im 21. Jahrhundert kämpfen wir mit den "Optimierungen" die in der Steinzeit an Dateisystemem vorgenommen wurden (kaum Metadaten verfügbar): Leider kann man noch immer nicht genau sagen mit welchem Encoding die Bytefolgen beim Programm ankommen.
+ 
+Laut des Buches "Fluent Python" kann das chardet-Package (https://pypi.python.org/pypi/chardet/) helfen. Man kann sich auch PyUCA (https://pypi.python.org/pypi/pyuca/) anschauen.
+
+
+Große Datenmengen parallel aufnehmen und laufend wegspeichern
+-------------------------------------------------------------
+
+@hornig macht Science: sein SDR-Dongle liefert Daten mit 4 MB/s, die nahtlos aufgezeichnet werden sollen. Idealerweise werden die Daten alle 200MB gesplittet; hierbei sollen jedoch keine Bytes verloren gehen, wenn die eine Datei vollgeschrieben und die Nächste begonnen wurde (No byte left behind).
+
+Die Verarbeitung der Daten läuft nachgelagert.
+
+Aktuell läuft's mit Python 2 unter Windows; die Workshoppper empfehlen mindestens 3.4 zu verwenden (dies wird dann auch auf der Zielplattform Raspbian gut laufen).
+
+Ein Vorschlag: es werden 2 Threads verwendet, wovon der erste die Samples in Chunks einliest und, wenn ein Chunk "voll" ist, diesen in eine Queue (https://docs.python.org/2.7/library/queue.html Python stdlib FTW!) steckt, damit umgehend der nächste Chunk gefüllt werden kann. Der zweite Thread nimmt diese Chunks aus der Queue und schreibt sie in Dateien, deren Größe von eben diesem zweiten Thread kontrolliert werden kann. Hierbei kann man mit os.posix_fadvise() dem Betriebssystem helfen, die Daten zum geeigneten Zeitpunkt auf Festplatte zu sichern.
+
+Codebeispiel::
+ 
+ with open(fname, "wb") as f:
+     f.write(...)
+     f.flush()
+     os.fsync(f.fileno())
+     if hasattr(os, "posix_fadvise"):  # py3.3+, UNIX
+         # tell the OS that it does not need to cache what
+         # we just wrote, avoids spoiling the cache for the
+         # OS and other processes.
+         os.posix_fadvise(f.fileno(),
+             0, 0, os.POSIX_FADV_DONTNEED)
+
+Zusätzlich können die Dateien durch lz4 komprimiert gespeichert werden.
+
+Man muss noch die Länge der Queues herausfinden: im vorliegenden Fall empfiehlt sich "unendlich", weil die Queue sonst blockieren könnte, wodurch Samples verloren gingen. (siehe auch Beispiel am Ende der o.g. Queue-Dokumentation)
+
+
+Random Randgespräche
+--------------------
+
+* Docker, Images, Container, aufräumen (@bronsen, @martin)
+
+von da dann zu Debianpaketen und deren Platzverbrauch::
+ 
+ #!/bin/bash
+ dpkg-query -Wf '${Installed-Size}\t${Package}\t${Status}\n' | grep -v 'deinstall ok'| sort -n|awk '{print $1"\t"$2}'
+
+
+
+* Performance und bauen von borg backup mit PyInstaller 3 (http://www.pyinstaller.org/) (@tw, @hornig)
+
+
+* Nettes Tool: pyenv (https://github.com/yyuu/pyenv)
+
