@@ -1,0 +1,58 @@
+=================
+Stupig 2015-10-16
+=================
+ 
+Agenda
+------
+ 
+* Vorstellungsrunde + Was hast du in den letzten 2 Wochen mit Python gemacht?
+
+  - @mfa: nur auf Arbeit
+  - @tw: pytest benchmark verwendet. mit ner fixture einzubauen. https://github.com/ionelmc/pytest-benchmark ... und noch an borgbackup weitergearbeitet
+  - @notanormalnerd: hat https://github.com/coderanger/depot in bepasty eingebaut. auf arbeit python-ldap gemacht.
+  - @markus: ansible angeschaut. http://www.ansible.com/ .. gehört jetzt redhat. hat aber gute lizenz
+  - @fr34k: borgbackup unter cygwin versucht und hatte dabei probleme. dann mit http://scoop.sh/ probiert. noch nicht gut in windows10. alternative https://chocolatey.org/ 
+  - @bronsen: nur auf Arbeit. decoratorfactory gemacht. ist aber zuviel hirnfick. "fluent python" ist gut.
+  - @frank: wavefiles ausgelesen. mit numpy. ist gut. will getriebeschwingungen hörbar machen.
+
+
+* "Fluent Python" - Lesebefehl 
+
+@mfa und @bronsen befehlen, dieses Buch zu lesen: http://shop.oreilly.com/product/0636920032519.do Dieses Buch ist gut, wahr und schön.
+
+Podcast mit dem Autor http://talkpython.fm/episodes/show/24/fluent-python
+
+
+* Contextmanager mit @bronsen
+
+Code wird gezeigt, kann hier nicht verlinkt werden.
+
+Context Manager können helfen, Businesslogik übersichtlicher und klarer zu implementieren. Vor allem Patterns ala "try/except/else" schreien nach dem Einsatz von Context Manager.
+
+Ein Blick in die "contextlib" enthüllt den äußerst hilfreichen `@contextmanager` Dekorator und den `suppress` Context Manager: https://docs.python.org/3.4/library/contextlib.html#contextlib.contextmanager https://docs.python.org/3.4/library/contextlib.html#contextlib.suppress 
+
+Es ist ziemlich einfach, selber Context Manager zu implementieren.
+
+* supress
+
+  from contextlib import suppress
+  with suppress(NotFoundError):
+    do_sth()
+    
+    
+* responses um http zu mocken
+
+https://github.com/getsentry/responses
+
+
+* Metaklassen für coolere choices in Django mit @mfa
+
+https://nerandell.github.io/ordered-class-members-in-python/
+
+
+* Terminfindung für IT-Toshokan
+
+https://github.com/shackspace/IT-Toshokan/issues
+
+Um hier mal endlich in die Pötte zu kommen, richten wir einen Duhdel ein: https://dudle.inf.tu-dresden.de/privacy/erstes_Treffen_des_IT-Toshokan/
+
