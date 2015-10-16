@@ -5,13 +5,13 @@ Stupig 2015-10-16
 Vorstellungsrunde + Was hast du in den letzten 2 Wochen mit Python gemacht?
 ---------------------------------------------------------------------------
 
-  - @mfa: nur auf Arbeit
-  - @tw: pytest benchmark verwendet. mit ner fixture einzubauen. https://github.com/ionelmc/pytest-benchmark ... und noch an borgbackup weitergearbeitet
-  - @notanormalnerd: hat https://github.com/coderanger/depot in bepasty eingebaut. auf arbeit python-ldap gemacht.
-  - @markus: ansible angeschaut. http://www.ansible.com/ .. gehört jetzt redhat. hat aber gute lizenz
-  - @fr34k: borgbackup unter cygwin versucht und hatte dabei probleme. dann mit http://scoop.sh/ probiert. noch nicht gut in windows10. alternative https://chocolatey.org/ 
-  - @bronsen: nur auf Arbeit. decoratorfactory gemacht. ist aber zuviel hirnfick. "fluent python" ist gut.
-  - @frank: wavefiles ausgelesen. mit numpy. ist gut. will getriebeschwingungen hörbar machen.
+- @mfa: nur auf Arbeit
+- @tw: pytest benchmark verwendet. mit ner fixture einzubauen. https://github.com/ionelmc/pytest-benchmark ... und noch an borgbackup weitergearbeitet
+- @notanormalnerd: hat https://github.com/coderanger/depot in bepasty eingebaut. auf arbeit python-ldap gemacht.
+- @markus: ansible angeschaut. http://www.ansible.com/ .. gehört jetzt redhat. hat aber gute lizenz
+- @fr34k: borgbackup unter cygwin versucht und hatte dabei probleme. dann mit http://scoop.sh/ probiert. noch nicht gut in windows10. alternative https://chocolatey.org/ 
+- @bronsen: nur auf Arbeit. decoratorfactory gemacht. ist aber zuviel hirnfick. "fluent python" ist gut.
+- @frank: wavefiles ausgelesen. mit numpy. ist gut. will getriebeschwingungen hörbar machen.
 
 
 "Fluent Python" - Lesebefehl
