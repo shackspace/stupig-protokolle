@@ -1,0 +1,65 @@
+=================
+Stupig 2015-12-11
+=================
+ 
+Vorstellungsrunde + Was hast du in den letzten 2 Wochen mit Python gemacht?
+---------------------------------------------------------------------------
+
+
+@bronsen nix spezielles: nur ein paar functool.partials, und ganz viele generator expressions. Das zipfile-package ist cool: zipfile.writestr(data, file_name) macht Daten unte gegebenen Namen ins Archiv ohne dass man dafür eine Datei anlegen muss.
+
+@mfa feinstaub-api änderungen: mehr rest-api; mehr monitoring; mehr data-extraktion; elasticsearch-dsl ist gut.
+
+@notanormalnerd nichts spezielles in python gemacht.
+
+@rixx bin neu und lerne gerade Python für die Arbeit.
+
+
+@michael-k Work; Den Code geschrieben, der im Vortrag vorkommt.
+https://github.com/jfrazelle/dockerfiles
+
+@hacknorris json ist echt einfach zu öffnen. beautiful soup angeschaut.
+
+
+it toshokan
+-----------
+
+https://github.com/shackspace/IT-Toshokan/blob/master/python/Fluent_Python_-_Luciano_Ramalho.md
+
+Wir sind bis Kapitel 7 gekommen.
+Nächstes Treffen ist für mitte Januar vorgesehen: 13. Januar 2016
+Weitere "Mitleser" erwünscht!
+
+
+
+Vortrag: michael-k -- Improving django-celery tasks with metaprogramming
+------------------------------------------------------------------------
+
+Vorbedingung: celery um Dinge parallel zu starten
+
+Erste Iteration: method_caller ruft den celery-task auf, der aber in der aktuellen class implementiert ist
+Zweite Iteration: decorator, der eine methode einen task zu machen
+Dritte Iteration: Metaclasses.
+
+-> https://github.com/shackspace/stupig-protokolle/blob/master/2015-12-11.ipynb
+
+$ docker run --rm --expose=8888 -p 8888:8888 -v /path/to/jupyter:/data pdonorio/jupy3dataslide
+
+
+Mozilla hat Kohle gespendet
+---------------------------
+
+https://blog.mozilla.org/blog/2015/12/10/mozilla-open-source-support-first-awards-made/
+
+Geld für channels in Django!
+
+
+letsmeet.click
+--------------
+
+https://github.com/mfa/letsmeet.click
+
+-> wird auf dem Congress gesprintet.
+
+
+next stupig: 8.1.2016
