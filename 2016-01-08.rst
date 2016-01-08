@@ -1,0 +1,29 @@
+=================
+Stupig 2016-01-08
+=================
+ 
+ 
+Vorstellungsrunde + Was hast du in den letzten 4 Wochen mit Python gemacht?
+---------------------------------------------------------------------------
+
+@mfa https://meinsack.click https://www.letsmeet.click #32c3 ein wenig shackbureau feinstaub/jupyter
+
+@asmaps https://www.letsmeet.click #32c3
+
+@notanormalnerd #urlaub #arbeit
+
+@fg matrix.org gefunden, Server ist in Python 
+fosdem.org
+
+
+misc
+----
+
+DjangoCon 2016, https://djangocon.eu/: Beautiful venue in the heart of Budapest, Hungary. 3 days of talks: March 30th, 31st, April 1st, 2 days of sprints: April 2nd & 3rd
+
+Learning Python for Data Analysis and Visualization
+https://www.udemy.com/learning-python-for-data-analysis-and-visualization/
+
+@mfa hat letzte Woche https://www.coursera.org/learn/machine-learning/ angefangen.
+
+jupyter notebook mit octave in docker: https://github.com/opendata-stuttgart/jupyter
