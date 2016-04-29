@@ -1,0 +1,47 @@
+=================
+Stupig 2016-04-29
+=================
+ 
+ 
+private Projekte vorstellen in 5 Minuten
+----------------------------------------
+(http://lightningtimer.info/)
+
+@bronsen
+https://github.com/Jack000/Expose bzw https://github.com/Jack000/Expose/blob/master/expose.sh in Python reimplementieren.
+eine möglichkeit: https://github.com/mplewis/expose.py forken und weitermachen
+
+@mfa
+https://cress.space/ (https://github.com/aerospaceresearch/cress-website) beobachtet Kressewachstum, soll aber wohl schön und interaktiv sein. Raspi mit Licht-/Wassersteuerung soll mit 1 vote/person/stunde gesteuert werden. (Derzeit kriegt der Raspi statische Befehlspakete, stündlich.) Die Seite habe unendliches Potenzial.
+Web-Seite ist Django, Raspberry-Seite ist bash.
+
+@ttb
+https://github.com/shackspace/shackbureau
+Gute Importe wären gut: Steuerberater -> csv (mit Tippfehlern weil Mensch) -> shackbureau.
+
+@fg
+Zwei gute Videos (gab 50% Rabatt wie fast immer)
+Advanced Jupyter Notebook Deployment       
+http://shop.oreilly.com/product/0636920046974.do
+Jupyter Notebook for Data Science Teams
+http://shop.oreilly.com/product/0636920044260.do                     
+
+Zwei Talks eingereicht
+Using Spark -- With PySpark
+http://pydata.org/berlin2016/schedule/presentation/28/
+Was passt besser zu Big Data, Java oder Python?
+http://www.java-forum-stuttgart.de/de/Abstracts+Slot+6.html#art2766
+
+
+Wie soll es denn mal weitergehen mit StuPIG?
+--------------------------------------------
+
+Die initiale Vorstellungsrunde (s.o.) findet großen Anklang. Wichtig ist die gnadenlose zeitliche Begrenzung.
+
+Eventuell die Frequenz halbieren; auf einen anderen Wochentag verschieben.
+
+Lightning Talks wären prinzipiell gut. Und Lightning Problems. Lightning Books. Lightning Discussions. aber immer nur 5mins.
+
+Wieder mehr zum Workshop-Gedanken zurück: Probleme, Herausforderungn etc in Gruppen angehen. Produktiv arbeiten, weniger blubbern.
+
+Nächster Termin: https://www.letsmeet.click/c/stupig/python-workshop-40-2016-06-01/
