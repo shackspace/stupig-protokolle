@@ -98,7 +98,7 @@ monatlich? an welchem Tag? (kein Freitag, kein Wochenende)
 
 Ankündigung nächstes Mal weiter streuen.
 
-==>> Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
+==> Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
 
 ==> next 29.6. 19Uhr
 
