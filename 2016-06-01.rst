@@ -1,0 +1,98 @@
+=================
+Stupig 2016-06-01
+=================
+
+Blogpost: http://shackspace.de/?p=5416
+
+ 
+Lightningtalks ftw - 5 Minuten
+------------------------------
+
+(http://lightningtimer.info/)
+
+
+Parsey McParsface
+~~~~~~~~~~~~~~~~~
+
+@mfa erzählte
+
+https://github.com/tensorflow/models/tree/master/syntaxnet
+
+http://googleresearch.blogspot.de/2016/05/announcing-syntaxnet-worlds-most.html
+
+..
+
+  echo "The quick brown fox and Maria jump over the lazy dog" | docker run -i --rm saturnism/syntaxnet 2> /dev/null
+
+
+PySpark
+~~~~~~~
+
+@fg erzählte von seinem Workshop auf der PyData
+
+PySpark ist eine API für Spark in Python. as expected.
+DataFrame Python ist so schnell wie Spark.
+Voller Vortrag auf der mlugs -> http://www.mlugs.de/mlugs-treffen-im-juni-2016/
+
+
+py.test
+~~~~~~~
+
+@bronsen erzählt von yield fixtures und anderen Dingen aus py.test
+
+a) https://pytest.org/latest/yieldfixture.html machen setup&teardown einfacher: keine callbacks notwendig
+
+b) Eine fixture kann auch einen callable zurückgeben.
+
+c) logged_in_client Beispiel für Parametrisierung von fixtures. sehr cool, weil client ähnlich zu requests erscheint: https://pytest-django.readthedocs.io/en/latest/helpers.html#client-django-test-client
+
+d) pytest.mark.usefixtures -> https://pytest.org/latest/fixture.html#usefixtures
+
+e) operator.methodcaller -> https://docs.python.org/3/library/operator.html#operator.methodcaller  
+
+Frage: Notebooks testen? https://github.com/ldiary/pytest-testbook
+
+
+SortedContainer
+~~~~~~~~~~~~~~~~
+
+@rixx erzählt
+
+falls man sortierte Dinge haben will. In performant und ordentlich getestet.
+
+http://www.grantjenks.com/docs/sortedcontainers/
+https://github.com/grantjenks/sorted_containers
+
+
+runipy
+~~~~~~
+
+@mfa hat dinge probiert:
+
+https://github.com/paulgb/runipy
+
+in docker: docker-compose run main runipy 1_hello_tensorflow.ipynb 1_hello_tensorflow-OUTPUT.ipynb
+
+django-shell in jupyter:
+
+http://kaflurbaleen.blogspot.de/2015/09/using-ipython-notebook-with-django-on.html
+
+git-annex für pickle files in S3
+
+
+fizz-buzz in tensorflow
+~~~~~~~~~~~~~~~~~~~~~~~
+
+http://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
+https://github.com/joelgrus/fizz-buzz-tensorflow/blob/master/fizz_buzz.py
+
+
+Organisatorisches
+-----------------
+
+monatlich? an welchem Tag? (kein Freitag, kein Wochenende)
+Ankündigung nächstes Mal weiter streuen.
+ ==>>
+ Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
+==> next 29.6. 19Uhr
+
