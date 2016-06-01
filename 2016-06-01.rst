@@ -31,7 +31,9 @@ PySpark
 @fg erzählte von seinem Workshop auf der PyData
 
 PySpark ist eine API für Spark in Python. as expected.
+
 DataFrame Python ist so schnell wie Spark.
+
 Voller Vortrag auf der mlugs -> http://www.mlugs.de/mlugs-treffen-im-juni-2016/
 
 
@@ -61,6 +63,7 @@ SortedContainer
 falls man sortierte Dinge haben will. In performant und ordentlich getestet.
 
 http://www.grantjenks.com/docs/sortedcontainers/
+
 https://github.com/grantjenks/sorted_containers
 
 
@@ -84,6 +87,7 @@ fizz-buzz in tensorflow
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 http://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
+
 https://github.com/joelgrus/fizz-buzz-tensorflow/blob/master/fizz_buzz.py
 
 
@@ -91,8 +95,10 @@ Organisatorisches
 -----------------
 
 monatlich? an welchem Tag? (kein Freitag, kein Wochenende)
+
 Ankündigung nächstes Mal weiter streuen.
- ==>>
- Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
+
+==>> Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
+
 ==> next 29.6. 19Uhr
 
