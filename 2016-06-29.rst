@@ -1,0 +1,138 @@
+=================
+Stupig 2016-06-29
+=================
+
+ 
+Lightningtalks
+--------------
+
+(http://lightningtimer.info/)
+
+
+mfk - effizient über generatoren gehen
+--------------------------------------
+
+.. highlight:: python
+
+::
+  from itertools import chain
+
+  # all elements within on generator are the same,
+  # but there are different flavors of generators
+  all_data = generator()
+  first = next(all_data)
+  
+  based_on_first = calculate(first.foo)
+
+  for element in chain([first], all_data):
+      # use based_on_first without calling
+      # calculate() in every iteration
+      pass
+
+
+mfk - Django Models generieren
+------------------------------
+
+von einem Model erben; ein neues Model erzeugen und dem dann dynamisch Felder hinzufügen.
+Migrations funktionieren damit; der admin auch.
+
+::
+  # models.py
+  class BaseCls(TimeStampedModel):
+      pass # define some fields
+      
+  generated_models = []
+  
+  for cls_name in iterable:
+      generated_cls = type(
+          cls_name,
+          (BaseCls, ),
+          {'__module__': BaseCls.__module__},
+      )
+      globals()[cls_name] = generated_cls
+      generated_models.append(generated_cls)
+
+  # admin.py
+  from .models import generated_models
+
+  class SomeAdmin(ModelAdmin):
+      pass
+
+  register(*generated_models)(SomeAdmin)
+
+
+mfa - Tensorboard
+-----------------
+
+schöne Visualisierung der Models und der geloggten Ergebnisse
+Arbeitet auf den logs von tensorflow
+https://www.tensorflow.org/versions/r0.7/how_tos/summaries_and_tensorboard/index.html
+
+
+mfa - TensorflowModels schicker machen
+--------------------------------------
+
+http://danijar.com/structuring-your-tensorflow-models/
+
+
+ttb - Zahlen in Worten
+----------------------
+
+::
+
+  >>> from num2words import num2words
+  >>> num2words(42, lang="de")
+  zweiundvierzig
+  >>> num2words(Decimal("42.40"), lang="de")
+  zweiundvierzig Komma vier null
+
+
+fg - jupyter notebooks für alles
+--------------------------------
+
+fg zeigt eine salt-demo komplett in einem notebook. mit salt in einem docker container.
+
+fg zeigt ein notebook mit djangocms. auch die files kann man in einem notebook edieren. auch die shell commands.
+
+::
+
+  %%file um eine datei zu edieren
+  ! um ein kommando auszuführen
+
+
+fg - Coconut
+------------
+
+http://coconut-lang.org/
+
+functional programming mit python.
+die sprache ist gültiges python. und läuft auf py2 und py3 nativ.
+
+
+mfk - Decimal
+-------------
+
+Hilfsfunktion für die IPython Shell
+
+::
+
+  >>> from decimal import Decimal
+  
+  >>> Decimal(1.23)
+  Decimal('1.229999999999999982236431605997495353221893310546875')
+  
+  >>> D = lambda value: Decimal(str(value).replace(',', '.'))
+  
+  >>> Decimal(1.23)
+  Decimal('1.23')
+  
+  >>> D('1,23')
+  Decimal('1.23')
+
+
+organisatorisches
+-----------------
+
+==> Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
+
+==> next 27. Juli. 19Uhr
