@@ -15,6 +15,7 @@ mfk - effizient über generatoren gehen
 .. highlight:: python
 
 ::
+
   from itertools import chain
 
   # all elements within on generator are the same,
@@ -37,6 +38,7 @@ von einem Model erben; ein neues Model erzeugen und dem dann dynamisch Felder hi
 Migrations funktionieren damit; der admin auch.
 
 ::
+
   # models.py
   class BaseCls(TimeStampedModel):
       pass # define some fields
