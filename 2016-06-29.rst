@@ -14,8 +14,6 @@ mfk - effizient über generatoren gehen
 
 .. highlight:: python
 
-::
-
   from itertools import chain
 
   # all elements within on generator are the same,
@@ -37,7 +35,7 @@ mfk - Django Models generieren
 von einem Model erben; ein neues Model erzeugen und dem dann dynamisch Felder hinzufügen.
 Migrations funktionieren damit; der admin auch.
 
-::
+.. highlight:: python
 
   # models.py
   class BaseCls(TimeStampedModel):
@@ -80,7 +78,7 @@ http://danijar.com/structuring-your-tensorflow-models/
 ttb - Zahlen in Worten
 ----------------------
 
-::
+.. highlight:: python
 
   >>> from num2words import num2words
   >>> num2words(42, lang="de")
@@ -116,7 +114,7 @@ mfk - Decimal
 
 Hilfsfunktion für die IPython Shell
 
-::
+.. highlight:: python
 
   >>> from decimal import Decimal
   
