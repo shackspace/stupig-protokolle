@@ -1,0 +1,191 @@
+=================
+Stupig 2016-07-27
+=================
+
+ 
+Lightningtalks
+--------------
+
+http://lightningtimer.info/
+
+
+[mfa] TensorFlow auf dem RaspberryPI in Docker
+----------------------------------------------
+
+nachzulesen auf:
+http://blog.madflex.de/tensorflow-python3-docker-raspberry-pi/
+
+Image: https://hub.docker.com/r/mfandreas/rpi-tensorflow-python3/
+
+
+
+[mfk] Django: non-common JSONField Queries
+------------------------------------------
+
+schon vorhanden in Django 1.9:
+
+::
+  class MyModel(TimeStampedModel):
+     stakeholders = JSONField(default=dict, null=False, blank=False)
+
+Beispieldaten:
+
+::
+  MyModel.objects.bulk_create([
+      MyModel(stakeholders=stakeholders)
+      for stakeholders in (
+          {'weather': ['A', 'C', 'B'], 'other': ['C']},
+          {'weather': ['B']},
+          {'other': ['A', 'C']},
+          {'weather': ['A', 'C']},
+          {'weather': ['B']},
+          {'weather': ['B']},
+      )
+  ])
+
+Queries:
+
+::
+  MyModel.objects.count()
+  6
+  MyModel.objects.filter(stakeholders__has_key='weather').count()
+  5
+  MyModel.objects.filter(stakeholders__weather__contains='B').count()
+  DataError
+  MyModel.objects.filter(stakeholders__weather__contains=['B']).count()
+  4
+
+Wie bekomm ich eine Liste aller Werte unter dem Key 'weather'?  Postgres hat dafür ja etwas: https://www.postgresql.org/docs/9.4/static/functions-json.html
+
+::
+  from django.db.models.aggregates import Func                       
+                      
+  class ObjectAtKey(Func):                       
+      function = '#>'
+      template = "%(expressions)s%(function)s'{%(keyname)s}'"
+      arity = 1                       
+      def __init__(self, expression, keyname, **extra):
+          super().__init__(expression, keyname=keyname, **extra)
+          
+  MyModel.objects \
+      .annotate(foo=ObjectAtKey('stakeholders', 'weather')) \
+      .order_by('foo') \
+      .distinct('foo') \
+      .values_list('foo', flat=True)  
+  [['B'], ['A', 'C'], ['A', 'C', 'B'], None]
+
+Jetzt hab ich eine Liste von Listen.  Aber wie bekomme ich eine Liste von uniquen „Werten die in den Listen vorkommen“ direkt von Postgres?
+
+::
+  class JsonbArrayElements(Func):                       
+      function = 'jsonb_array_elements'
+      template = '%(function)s(%(expressions)s)'
+      arity = 1
+      
+  MyModel.objects \
+      .annotate(foo=JsonbArrayElements(ObjectAtKey('stakeholders', 'weather'))) \
+      .order_by('foo') \
+      .distinct('foo') \
+      .values_list('foo', flat=True)
+  ['A', 'B', 'C']
+
+
+[mfa] mqtt aus yml heraus aktuell halten
+----------------------------------------
+
+die Teile der Config von home-assistant ins mqtt pushen, um in graphite Zuordnungen zu haben:
+
+https://github.com/mfa/shack-mqtt-homeassistant/blob/master/push_homeassistant_names.py
+
+anderer subscriber der von einem sensor die werte in eine andere api pusht. alle 5 minuten:
+
+https://github.com/aerospaceresearch/cress-meta/blob/master/mqtt/push_dht22.py
+
+
+[mfk] Django: Creating Sub-Classes with Metaprogramming
+-------------------------------------------------------
+
+Die letzte Query von oben gibt es im folgenden unter `MyModel.get_list_elements()`.
+
+::
+  from abc import ABCMeta
+
+  class MyMeta(ABCMeta):
+
+    def __new__(mcls, class_name, bases, namespace):
+        new = super().__new__(mcls, class_name, bases, namespace)
+        if class_name == 'MyBase':
+            try:
+                list_elements = MyModel.get_list_elements()
+            except (OperationalError, ProgrammingError):
+                # Either there is no db
+                # or the relation is missing
+                pass
+            else:
+                for list_element in list_elements:
+                    subcls_name = 'My{}Concrete'.format(
+                        list_element.capitalize(),
+                    )
+                    subcls = type(subcls_name, (new, ), {'my_attr': list_element})
+                    # We need this in our enviroment;
+                    # it might not be needed in your use case
+                    subcls.__module__ = new.__module__
+        return new
+
+  class MyBase:
+      my_attr = None
+
+
+[mfk] Gource
+------------
+
+visualisieren von commits in cool
+http://gource.io/
+
+::
+  cd repo
+  gource --seconds-per-day 0.1 --auto-skip-seconds 0.1
+  gource --seconds-per-day 0.2 --auto-skip-seconds 1 -1920x1080 -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
+
+Fehlt noch: ordentliche Komprimierung
+
+
+[mfa] materializecss
+--------------------
+
+http://materializecss.com/
+
+verwendet in https://cress.space/
+
+deutlich näher an material als bootstrap-material
+
+https://material.google.com/
+
+
+[mfk] - docker basiertes postgres upgrade
+-----------------------------------------
+
+https://hub.docker.com/r/tianon/postgres-upgrade/tags/
+
+
+[mfa] letsmeet.click
+--------------------
+
+bitte um Mithilfe: https://letsmeet.click/ - https://github.com/letsmeet-click/letsmeet.click
+
+wichtige (missing) fixes:
+
+- ical feed support
+- emailadresse ändern / roundtrip-verifikation
+- passwort hinzufügen/ändern
+
+(vielleicht mal zusammen an einem Abend an letsmeet.click arbeiten)
+
+
+
+organisatorisches
+-----------------
+
+==> Mittwochs, alle vier Wochen; der Freitagstermin bleibt erhalten
+
+==> next 24. August 19Uhr
