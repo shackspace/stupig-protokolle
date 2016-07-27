@@ -24,13 +24,15 @@ Image: https://hub.docker.com/r/mfandreas/rpi-tensorflow-python3/
 
 schon vorhanden in Django 1.9:
 
-::
+.. sourcecode:: python
+
   class MyModel(TimeStampedModel):
      stakeholders = JSONField(default=dict, null=False, blank=False)
 
 Beispieldaten:
 
-::
+.. sourcecode:: python
+
   MyModel.objects.bulk_create([
       MyModel(stakeholders=stakeholders)
       for stakeholders in (
@@ -45,7 +47,8 @@ Beispieldaten:
 
 Queries:
 
-::
+.. sourcecode:: python
+
   MyModel.objects.count()
   6
   MyModel.objects.filter(stakeholders__has_key='weather').count()
@@ -57,7 +60,8 @@ Queries:
 
 Wie bekomm ich eine Liste aller Werte unter dem Key 'weather'?  Postgres hat dafür ja etwas: https://www.postgresql.org/docs/9.4/static/functions-json.html
 
-::
+.. sourcecode:: python
+
   from django.db.models.aggregates import Func                       
                       
   class ObjectAtKey(Func):                       
@@ -76,7 +80,8 @@ Wie bekomm ich eine Liste aller Werte unter dem Key 'weather'?  Postgres hat daf
 
 Jetzt hab ich eine Liste von Listen.  Aber wie bekomme ich eine Liste von uniquen „Werten die in den Listen vorkommen“ direkt von Postgres?
 
-::
+.. sourcecode:: python
+
   class JsonbArrayElements(Func):                       
       function = 'jsonb_array_elements'
       template = '%(function)s(%(expressions)s)'
@@ -107,7 +112,8 @@ https://github.com/aerospaceresearch/cress-meta/blob/master/mqtt/push_dht22.py
 
 Die letzte Query von oben gibt es im folgenden unter `MyModel.get_list_elements()`.
 
-::
+.. sourcecode:: python
+
   from abc import ABCMeta
 
   class MyMeta(ABCMeta):
@@ -143,6 +149,7 @@ visualisieren von commits in cool
 http://gource.io/
 
 ::
+
   cd repo
   gource --seconds-per-day 0.1 --auto-skip-seconds 0.1
   gource --seconds-per-day 0.2 --auto-skip-seconds 1 -1920x1080 -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
