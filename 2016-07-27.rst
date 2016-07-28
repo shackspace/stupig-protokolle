@@ -115,6 +115,8 @@ Die letzte Query von oben gibt es im folgenden unter `MyModel.get_list_elements(
 .. sourcecode:: python
 
   from abc import ABCMeta
+  
+  registry = dict()
 
   class MyMeta(ABCMeta):
 
@@ -136,10 +138,17 @@ Die letzte Query von oben gibt es im folgenden unter `MyModel.get_list_elements(
                     # We need this in our enviroment;
                     # it might not be needed in your use case
                     subcls.__module__ = new.__module__
+                    registry[subcls_name] = subcls
         return new
 
-  class MyBase:
+  class MyBase(metaclass=MyMeta):
       my_attr = None
+      
+      def do_something(self):
+          # Do something based on self.my_attr
+          print(self.my_attr)
+
+Besides `MyBase` the classes `MyAConcrete`, `MyBConcrete`, MyCConcrete` are available.  Instead of adding them to a dict (i.e. `registry`), we could add them to the global namespace.
 
 
 [mfk] Gource
