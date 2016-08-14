@@ -14,8 +14,8 @@ Jeder möge sein Projekt hier eintragen. Es darf natürlich auch privat/geheim s
 ### letsmeet.click
 
 mitstreiter:
-- @mfa
-- @jarus
+- mfa
+- jarus
 
 https://github.com/letsmeet-click/letsmeet.click
 
@@ -24,7 +24,6 @@ todos:
 - ✓ ical feed support
 - ✓ emailadresse ändern / roundtrip-verifikation
 - minimal tests für vorhande views
-- (lots more, siehe issues)
 
 
 ### hildegard
