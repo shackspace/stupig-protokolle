@@ -1,0 +1,69 @@
+=================
+Stupig 2016-08-24
+=================
+
+ 
+Lightningtalks
+--------------
+
+http://lightningtimer.info/
+
+
+mfa - why should i use python 3
+-------------------------------
+
+sehr vollständige Liste, warum Python 3 besser ist als Python 3:
+
+https://eev.ee/blog/2016/07/31/python-faq-why-should-i-use-python-3/
+
+
+mfa - letsmeet.click
+--------------------
+
+- email richtig. email ändern / überprüfen
+- ical support - https://github.com/letsmeet-click/letsmeet.click/blob/master/letsmeet/events/feeds.py
+
+
+
+bronsen - Sharding mit Django ist doof
+--------------------------------------
+https://github.com/cipriantarta/django-autoshard
+https://github.com/JBKahn/django-sharding
+https://github.com/BetterWorks/djschema
+
+alle sind an unterschiedlichen Problemen gescheitert: Migrations gebrochen, nicht alle nodes in der DB erzeugt
+
+
+bronsen - Pytest 3.0 released
+-----------------------------
+
+- alle fixtures können nun yield
+- pytest-django hat einige private methoden public gemacht und aufgeräumt
+- http://doc.pytest.org/en/latest/changelog.html#id6
+
+
+ttb - pydot
+-----------
+
+https://github.com/erocarrera/pydot
+
+pydot malt graphen.
+ttb hat für alle states in salt graphen geplottet.
+der graph wird erst beim plotten ausgewertet. beim aufbauen wird das noch nicht evaluiert.
+ttb hat bugs in den abhängigkeiten gefunden, weil der graph nicht richtig gerendert hat.
+ 
+
+ttb - pytest plugins
+--------------------
+
+- pytest-timeout - global definieren wie lange ein test maximal laufen darf / oder pro test markieren wie der max ist
+- pytest-xdist - parallel testen ftw.
+
+
+
+mfa - warum tensorflow ein cooles programmierparadigma darstellt
+----------------------------------------------------------------
+
+https://www.youtube.com/watch?v=bvHgESVuS6Q
+https://www.tensorflow.org/versions/r0.10/get_started/basic_usage.html
+
