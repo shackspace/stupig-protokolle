@@ -1,0 +1,68 @@
+=================
+Stupig 2016-09-21
+=================
+
+ 
+Lightningtalks
+--------------
+
+http://lightningtimer.info/
+
+
+mfa - pytest
+------------
+
+..
+
+   # geht auch an klassen - für weniger decorators an methoden
+  @pytest.mark.usefixtures("process_stuff")
+
+
+mfa - partials
+--------------
+
+..
+
+  from functools import partial
+  
+  def string2matrix(string, length):
+    x = [ord(element) for element in string]
+    return np.lib.pad(x, (0, (length-len(x))), 'constant', constant_values=(0,))
+    
+  field_names = data.field_name.map(partial(string2matrix, length=11))
+  other = data.other_field.map(partial(string2matrix, length=100))
+
+  # alternativ ohne partial:
+  def string2matrix_generic(length):
+      def inner(string):
+          return string2matrix(string, length)
+      return inner
+  field_names = data.field_name.map(string2matrix_generic(length=11))
+
+
+ttb - docker-py
+---------------
+
+command in einem docker ausführen:
+https://github.com/aexeagmbh/monitoring-plugins/blob/f524307f7e21c13a47a9fe89cfcfd5f7aa92aaad/plugins/check_dead_salt_minions.py#L9-L13
+
+
+mfk - django-autocomplete-light
+-------------------------------
+
+https://github.com/yourlabs/django-autocomplete-light
+alternative: https://github.com/crucialfelix/django-ajax-selects
+
+
+mfa - tagging
+-------------
+
+für tagging war bisher gut: https://github.com/alex/django-taggit
+
+
+Celery-Alternative
+------------------
+
+- https://github.com/ui/django-rq
+- https://github.com/ui/rq-scheduler
+
